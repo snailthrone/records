@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+body {
+	margin: 0;
+	#app {
+		display: block;
+		font-family: 'Questrial', Verdana, sans-serif;
+		color: #222;
+		.selectors {
+			width: 100%;
+			margin: auto;
+			position: fixed;
+			bottom: 0;
+			background: inherit;
+			z-index: 100;
+			.selector {
+				display: inline-block;
+				width: (100%/3);
+				margin: auto;
+				background: #222;
+				color: #fff;
+				top: 20px;
+				text-align: center;
+				padding: 20px 0;
+				&:hover {
+					cursor: pointer;
+					background: #7F7E7E;
+				}
+			}
+		}
+		.collection_container {
+			width: 100%;
+			max-width: 600px;
+			z-index: 50;
+			margin: auto;
+			position: relative;
+			padding: 20px 0;
+			@media screen and (min-width: 600px) {
+				padding: 20px;
+			}
+			.collection_header {
+				width: 100%;
+				text-align: center;
+				margin: auto auto 20px auto;
+				font-size: 30px;
+			}
+			.input_container {
+				width: 95%;
+				max-width: 600px;
+				position: fixed;
+				margin: auto;
+				margin-left: 6px;
+				@media screen and (min-width: 600px) {
+					margin-left: 0;
+				}
+				.search_field {
+					padding: 10px 0;
+					margin: auto;
+					width: 100%;
+				}
+			}
+			.album_wrapper {
+				padding-top: 20px;
+				font-size: 14px;
+				line-height: 1.5;
+				width: 95%;
+				margin: auto;
+				@media screen and (min-width: 600px) {
+					font-size: 18px;
+					width: 100%;
+				}
+				.description_text {
+					font-weight: 700;
+					margin: auto auto 10px auto;
+				}
+				.album_element {
+					margin: auto auto 10px auto;
+				}
+			}
+		}
+	}
+}
