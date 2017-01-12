@@ -2,11 +2,8 @@
 # -*- coding: utf-8 -*-
 import os
 import csv
-import re
 import json
 import operator
-
-#TO DO:
 
 collection = []
 
