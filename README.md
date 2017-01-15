@@ -1,8 +1,6 @@
 # records
 ## Description:
-A web application that shows me my current album collection, my wishlist, and upcoming upcoming albums what I consider interesting. This is also my first proper React and ES6 project.
-
-I used to update my collection first to RateYourMusic.com and then to Discogs, but updating massive amounts of records to them was eventually boring. In addition I have used to collect all interesting records of the year to a spreadsheets file which is a systematic way but irritating to browse with a mobile device while shopping new records. 
+I used to update my record collection first to RateYourMusic.com and then to Discogs, but updating massive amounts of records to them was eventually boring. In addition I have used to collect all interesting records of the year to a spreadsheets file which is a systematic way but irritating to browse with a mobile device while shopping new records. 
 
 As I backup all the albums I buy to a hard drive, the most recent 'version' of my collection is found there. So why not do a script that logs the content and an interface for that data which is also easy to use with mobile device?
 
