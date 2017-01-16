@@ -64,7 +64,7 @@ class App extends React.Component {
 						<span className="selector_title">Upcoming</span>
 					</div>
 					<div className="selector" onClick={this.changeList.bind(this, 'wantlist')}>
-						<span className="selector_title">Wantlist</span>
+						<span className="selector_title">Wishlist</span>
 					</div>
 				</div>
 				<Content searchContent={this.searchContent} value={this.state.value} content={this.state.content}/>

@@ -12,10 +12,7 @@ class Content extends React.Component {
 		return (
 			<div className="collection_container">
 				<div className="header_container">
-					<h1 className="collection_header">Levyt</h1>
-				</div>
-				<div className="input_container">
-					<input type="text" name="search_field" className="search_field" placeholder="Search" value={this.props.value} onChange={this.props.searchContent}/>
+					<h1 className="collection_header">Records</h1>
 				</div>
 				<div className="album_wrapper">
 					<p className="description_text">Artist - Album</p>
@@ -33,6 +30,9 @@ class Content extends React.Component {
 							}
 						}
 					})}
+				</div>
+				<div className="input_container">
+					<input type="text" name="search_field" className="search_field" placeholder="Search" value={this.props.value} onChange={this.props.searchContent}/>
 				</div>
 			</div>
 		)
