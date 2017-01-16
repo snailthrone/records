@@ -51,13 +51,8 @@ var Content = function (_React$Component) {
 					_react2.default.createElement(
 						'h1',
 						{ className: 'collection_header' },
-						'Levyt'
+						'Records'
 					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'input_container' },
-					_react2.default.createElement('input', { type: 'text', name: 'search_field', className: 'search_field', placeholder: 'Search', value: this.props.value, onChange: this.props.searchContent })
 				),
 				_react2.default.createElement(
 					'div',
@@ -116,6 +111,11 @@ var Content = function (_React$Component) {
 							}
 						}
 					})
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'input_container' },
+					_react2.default.createElement('input', { type: 'text', name: 'search_field', className: 'search_field', placeholder: 'Search', value: this.props.value, onChange: this.props.searchContent })
 				)
 			);
 		}
@@ -242,7 +242,7 @@ var App = function (_React$Component) {
 						_react2.default.createElement(
 							'span',
 							{ className: 'selector_title' },
-							'Wantlist'
+							'Wishlist'
 						)
 					)
 				),
