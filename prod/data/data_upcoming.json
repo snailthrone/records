@@ -10,14 +10,14 @@
 	"bought": true
 }, {
 	"artist": "Long Distance Calling",
-	"album": "Satellite Bay (Reissue)",
+	"album": "Satellite Bay",
 	"date": "10.2.2017",
 	"bought": true
 }, {
 	"artist": "Dance with the Dead",
 	"album": "Shape",
 	"date": "3.3.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Wolfheart",
 	"album": "Tyhjyys",
@@ -26,6 +26,11 @@
 }, {
 	"artist": "Mastodon",
 	"album": "Emperor of Sand",
+	"date": "31.3.2017",
+	"bought": true
+}, {
+	"artist": "Windswept",
+	"album": "Great Cold Steppe",
 	"date": "31.3.2017",
 	"bought": false
 }, {
@@ -37,16 +42,21 @@
 	"artist": "Alfahanne",
 	"album": "Det nya svarta",
 	"date": "7.4.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Nightbringer",
 	"album": "Terra Damnata",
 	"date": "14.4.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Oranssi Pazuzu",
-	"album": "Muukalainen puhuu (Reissue)",
+	"album": "Muukalainen puhuu",
 	"date": "14.4.2017",
+	"bought": true
+}, {
+	"artist": "Ghost Bath",
+	"album": "Starmourner",
+	"date": "21.4.2017",
 	"bought": false
 }, {
 	"artist": "Les Discrets",
@@ -77,5 +87,10 @@
 	"artist": "Sólstafir",
 	"album": "Berdreyminn",
 	"date": "26.5.2017",
+	"bought": false
+}, {
+	"artist": "Anathema",
+	"album": "The Optimist",
+	"date": "9.6.2017",
 	"bought": false
 }]
