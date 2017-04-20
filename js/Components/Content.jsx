@@ -19,9 +19,16 @@ class Content extends React.Component {
 					{this.props.content.map((data, i) => {
 						if (data.artist.toLowerCase().match(this.props.value) || data.album.toLowerCase().match(this.props.value)) {
 							if (data.date) {
-								return(
-									<p className="album_element" key={i}>{i+1}. <span className="artist">{data.artist}</span> - <span className="album">{data.album}</span> <span className="date">({data.date})</span></p>
-								);	
+								if (data.bought == true) {
+									return(
+										<p className="album_element album_element_bought" key={i}>{i+1}. <span className="artist">{data.artist}</span> - <span className="album">{data.album}</span> <span className="date">({data.date})</span></p>
+									);	
+								}
+								else {
+									return(
+										<p className="album_element" key={i}>{i+1}. <span className="artist">{data.artist}</span> - <span className="album">{data.album}</span> <span className="date">({data.date})</span></p>
+									);	
+								}
 							}
 							else {
 								return(

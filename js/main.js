@@ -1,7 +1,10 @@
+/*jshint esversion: 6 */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Axios from 'axios';
 import Content from './Components/Content.jsx';
+
+let app = document.getElementById('app');
 
 class App extends React.Component {
 	constructor(props) {
@@ -23,19 +26,22 @@ class App extends React.Component {
 		this.serverRequest = 
 			Axios
 				.get(url + "/data/data_collection.json")
-				.then(function(result) {
+				.then((result) => {
 					_this.setState({collection: result.data, content: result.data});
 				});
 			Axios
 				.get(url + "/data/data_upcoming.json")
-				.then(function(result) {
+				.then((result) => {
 					_this.setState({upcoming: result.data});
 				});
 			Axios
 				.get(url + "/data/data_wantlist.json")
-				.then(function(result) {
+				.then((result) => {
 					_this.setState({wantlist: result.data});
 				});
+	}
+	componentDidUpdate() {
+  		ReactDOM.findDOMNode(this).scrollTop = 0;
 	}
 	searchContent(event) {
 		this.setState({
@@ -54,16 +60,17 @@ class App extends React.Component {
 		}
 	}
 	render() {
+		console.log('rendering...')
 		return (
 			<div className="app_content">
 				<div className="selectors">
-					<div className="selector" onClick={this.changeList.bind(this, 'collection')}>
+					<div className="selector selector_collection" onClick={this.changeList.bind(this, 'collection')}>
 						<span className="selector_title">Collection</span>
 					</div>
-					<div className="selector" onClick={this.changeList.bind(this, 'upcoming')}>
+					<div className="selector selector_upcoming" onClick={this.changeList.bind(this, 'upcoming')}>
 						<span className="selector_title">Upcoming</span>
 					</div>
-					<div className="selector" onClick={this.changeList.bind(this, 'wantlist')}>
+					<div className="selector selector_wantlist" onClick={this.changeList.bind(this, 'wantlist')}>
 						<span className="selector_title">Wishlist</span>
 					</div>
 				</div>
@@ -73,4 +80,4 @@ class App extends React.Component {
 	}
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, app);
