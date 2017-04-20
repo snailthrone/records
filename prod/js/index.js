@@ -65,31 +65,59 @@ var Content = function (_React$Component) {
 					this.props.content.map(function (data, i) {
 						if (data.artist.toLowerCase().match(_this2.props.value) || data.album.toLowerCase().match(_this2.props.value)) {
 							if (data.date) {
-								return _react2.default.createElement(
-									'p',
-									{ className: 'album_element', key: i },
-									i + 1,
-									'. ',
-									_react2.default.createElement(
-										'span',
-										{ className: 'artist' },
-										data.artist
-									),
-									' - ',
-									_react2.default.createElement(
-										'span',
-										{ className: 'album' },
-										data.album
-									),
-									' ',
-									_react2.default.createElement(
-										'span',
-										{ className: 'date' },
-										'(',
-										data.date,
-										')'
-									)
-								);
+								if (data.bought == true) {
+									return _react2.default.createElement(
+										'p',
+										{ className: 'album_element album_element_bought', key: i },
+										i + 1,
+										'. ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'artist' },
+											data.artist
+										),
+										' - ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'album' },
+											data.album
+										),
+										' ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'date' },
+											'(',
+											data.date,
+											')'
+										)
+									);
+								} else {
+									return _react2.default.createElement(
+										'p',
+										{ className: 'album_element', key: i },
+										i + 1,
+										'. ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'artist' },
+											data.artist
+										),
+										' - ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'album' },
+											data.album
+										),
+										' ',
+										_react2.default.createElement(
+											'span',
+											{ className: 'date' },
+											'(',
+											data.date,
+											')'
+										)
+									);
+								}
 							} else {
 								return _react2.default.createElement(
 									'p',
@@ -153,7 +181,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /*jshint esversion: 6 */
+
+
+var app = document.getElementById('app');
 
 var App = function (_React$Component) {
 	_inherits(App, _React$Component);
@@ -192,6 +223,11 @@ var App = function (_React$Component) {
 			});
 		}
 	}, {
+		key: 'componentDidUpdate',
+		value: function componentDidUpdate() {
+			_reactDom2.default.findDOMNode(this).scrollTop = 0;
+		}
+	}, {
 		key: 'searchContent',
 		value: function searchContent(event) {
 			this.setState({
@@ -212,6 +248,7 @@ var App = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
+			console.log('rendering...');
 			return _react2.default.createElement(
 				'div',
 				{ className: 'app_content' },
@@ -220,7 +257,7 @@ var App = function (_React$Component) {
 					{ className: 'selectors' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'selector', onClick: this.changeList.bind(this, 'collection') },
+						{ className: 'selector selector_collection', onClick: this.changeList.bind(this, 'collection') },
 						_react2.default.createElement(
 							'span',
 							{ className: 'selector_title' },
@@ -229,7 +266,7 @@ var App = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'selector', onClick: this.changeList.bind(this, 'upcoming') },
+						{ className: 'selector selector_upcoming', onClick: this.changeList.bind(this, 'upcoming') },
 						_react2.default.createElement(
 							'span',
 							{ className: 'selector_title' },
@@ -238,7 +275,7 @@ var App = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'selector', onClick: this.changeList.bind(this, 'wantlist') },
+						{ className: 'selector selector_wantlist', onClick: this.changeList.bind(this, 'wantlist') },
 						_react2.default.createElement(
 							'span',
 							{ className: 'selector_title' },
@@ -254,7 +291,7 @@ var App = function (_React$Component) {
 	return App;
 }(_react2.default.Component);
 
-_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(App, null), app);
 
 },{"./Components/Content.jsx":1,"axios":3,"react":204,"react-dom":53}],3:[function(require,module,exports){
 module.exports = require('./lib/axios');
