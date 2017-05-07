@@ -43,4 +43,8 @@ def save_and_shutdown(target_file):
 	target_file.close()
 	print('Ready!')
 
+<<<<<<< HEAD
 get_data()
+=======
+get_data()
+>>>>>>> refs/remotes/origin/master

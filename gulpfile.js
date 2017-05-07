@@ -1,6 +1,10 @@
 // Gulp Dependencies
 process.argv.push('--silent');
 var gulp = require('gulp');
+<<<<<<< HEAD
+=======
+var babel = require('gulp-babel');
+>>>>>>> refs/remotes/origin/master
 var concat = require('gulp-concat');
 var gutil = require('gulp-util');
 var gif = require('gulp-if');
@@ -64,7 +68,11 @@ gulp.task('watch', function () {
   });
 
   //Watch JSX
+<<<<<<< HEAD
   gulp.watch('js/Components/*.jsx', function (file) {
+=======
+  gulp.watch('js/components/*.jsx', function (file) {
+>>>>>>> refs/remotes/origin/master
     runSequence('build-js');
   }).on('error', function (err) {
     gutil.log(err);
@@ -84,7 +92,11 @@ gulp.task('build-html', function() {
     .pipe(htmlmin({
       collapseWhitespace:true
     }))
+<<<<<<< HEAD
     .pipe(gulp.dest('./public'))
+=======
+    .pipe(gulp.dest('./prod'))
+>>>>>>> refs/remotes/origin/master
     .pipe(eval(live));
 });
 
@@ -103,7 +115,11 @@ gulp.task('build-css', function() {
     .pipe(cleancss())
     .pipe(concat('styles.min.css'))
     .pipe(sourcemaps.write('.'))
+<<<<<<< HEAD
     .pipe(gulp.dest('./public/css')).on('error', gutil.log)
+=======
+    .pipe(gulp.dest('./prod/css')).on('error', gutil.log)
+>>>>>>> refs/remotes/origin/master
     .pipe(gif('*.css', eval(live)));
 });
 // Build JS.
@@ -118,6 +134,7 @@ gulp.task('build-js', ['lint'], function () {
     return b.bundle()
       .pipe(source('./js/main.js'))
       .pipe(buffer())
+<<<<<<< HEAD
       .pipe(uglify({
         compress:true,
         mangle:true
@@ -127,6 +144,13 @@ gulp.task('build-js', ['lint'], function () {
         .on('error', util.log)
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('./public/js')).on('error', gutil.log)
+=======
+      .pipe(sourcemaps.init( {loadMaps: true }))
+      .pipe(concat('index.js'))
+        .on('error', util.log)
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('./prod/js')).on('error', gutil.log)
+>>>>>>> refs/remotes/origin/master
       .pipe(gif('*.js', eval(live)))
 });
 
