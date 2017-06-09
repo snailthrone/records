@@ -2,7 +2,39 @@
 import React from 'react';
 import objectAssign from 'object-assign';
 import Axios from 'axios';
+import styled from 'styled-components';
 import Content from './Content.jsx';
+
+const AppContent = styled.div`
+  color: #222;
+  display: block;
+  font-family: 'Questrial', Verdana, sans-serif;
+`;
+
+const Selectors = styled.div`
+  background: inherit;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+`;
+
+const Selector = styled.div`
+  background: #222;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+  top: 20px;
+  width: ${100/3}%;
+  &:hover {
+    background: #7F7E7E;
+    cursor: pointer;
+  }
+`;
 
 class App extends React.Component {
 	constructor(props) {
@@ -74,20 +106,20 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className="app-content">
-				<div className="selectors">
-					<div className="selector selector-collection" onClick={this.changeList.bind(this, 'collection')}>
+			<AppContent className="app-content">
+				<Selectors className="selectors">
+					<Selector className="selector selector-collection" onClick={this.changeList.bind(this, 'collection')}>
 						<span className="selector-title">Collection</span>
-					</div>
-					<div className="selector selector-upcoming" onClick={this.changeList.bind(this, 'upcoming')}>
+					</Selector>
+					<Selector className="selector selector-upcoming" onClick={this.changeList.bind(this, 'upcoming')}>
 						<span className="selector-title">Upcoming</span>
-					</div>
-					<div className="selector selector-wantlist" onClick={this.changeList.bind(this, 'wantlist')}>
+					</Selector>
+					<Selector className="selector selector-wantlist" onClick={this.changeList.bind(this, 'wantlist')}>
 						<span className="selector-title">Wishlist</span>
-					</div>
-				</div>
+					</Selector>
+				</Selectors>
 				<Content searchContent={this.searchContent} value={this.state.value} content={this.state.content}/>
-			</div>
+			</AppContent>
 		)
 	}
 }

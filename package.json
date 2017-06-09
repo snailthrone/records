@@ -19,6 +19,7 @@
   "author": "Eemeli Martti (@snailthrone)",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.15.3",
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.4.0",
@@ -34,10 +35,10 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "stripify": "6.0.0",
+    "styled-components": "^2.0.0",
     "uglify-js": "^3.0.7",
     "uglifyify": "^3.0.4",
-    "watchify": "^3.9.0",
-    "axios": "^0.15.3"
+    "watchify": "^3.9.0"
   },
   "engines": {
     "node": "7.8.0"
