@@ -10,12 +10,12 @@
 	"bought": true
 }, {
 	"artist": "Long Distance Calling",
-	"album": "Satellite Bay",
+	"album": "Satellite Bay (Reissue)",
 	"date": "10.2.2017",
 	"bought": true
 }, {
 	"artist": "Dance with the Dead",
-	"album": "Shape",
+	"album": "Shape (Reissue)",
 	"date": "3.3.2017",
 	"bought": true
 }, {
@@ -50,7 +50,7 @@
 	"bought": true
 }, {
 	"artist": "Oranssi Pazuzu",
-	"album": "Muukalainen puhuu",
+	"album": "Muukalainen puhuu (Reissue)",
 	"date": "14.4.2017",
 	"bought": true
 }, {
@@ -70,17 +70,17 @@
 	"bought": true
 }, {
 	"artist": "Voivod",
-	"album": "Rrröööaaarrr",
+	"album": "Rrröööaaarrr (Reissue)",
 	"date": "28.4.2017",
 	"bought": false
 },{
 	"artist": "Voivod",
-	"album": "Killing Technology",
+	"album": "Killing Technology (Reissue)",
 	"date": "28.4.2017",
 	"bought": false
 },{
 	"artist": "Voivod",
-	"album": "Dimension Hatröss",
+	"album": "Dimension Hatröss (Reissue)",
 	"date": "28.4.2017",
 	"bought": false
 }, {
@@ -92,10 +92,45 @@
 	"artist": "Sólstafir",
 	"album": "Berdreyminn",
 	"date": "26.5.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Anathema",
 	"album": "The Optimist",
 	"date": "9.6.2017",
+	"bought": true
+}, {
+	"artist": "Carpenter Brut",
+	"album": "CARPENTERBRUTLIVE",
+	"date": "30.6.2017",
+	"bought": false
+}, {
+	"artist": "Shade Empire",
+	"album": "Poetry of the Ill-Minded",
+	"date": "30.6.2017",
+	"bought": false
+}, {
+	"artist": "Various",
+	"album": "My Darkness 1999-2013",
+	"date": "14.7.2017",
+	"bought": false
+}, {
+	"artist": "Wintersun",
+	"album": "Forest Seasons",
+	"date": "21.7.2017",
+	"bought": true
+}, {
+	"artist": "Steven Wilson",
+	"album": "To the Bone",
+	"date": "18.8.2017",
+	"bought": false
+}, {
+	"artist": "Ildjarn",
+	"album": "1992-1995",
+	"date": "25.8.2017",
+	"bought": false
+}, {
+	"artist": "Hallatar",
+	"album": "No Stars Upon the Bridge",
+	"date": "7.10.2017",
 	"bought": false
 }]
