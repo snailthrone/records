@@ -129,8 +129,18 @@
 	"date": "25.8.2017",
 	"bought": false
 }, {
+	"artist": "Leprous",
+	"album": "Malina",
+	"date": "25.8.2017",
+	"bought": false
+}, {
 	"artist": "Hallatar",
 	"album": "No Stars Upon the Bridge",
+	"date": "7.10.2017",
+	"bought": false
+}, {
+	"artist": "Samael",
+	"album": "Hegemony",
 	"date": "7.10.2017",
 	"bought": false
 }]
