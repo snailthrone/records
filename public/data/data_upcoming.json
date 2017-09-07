@@ -188,4 +188,9 @@
 	"album": "E",
 	"date": "13.10.2017",
 	"bought": false
+}, {
+	"artist": "Perturbator",
+	"album": "New Model",
+	"date": "20.10.2017",
+	"bought": false
 }]
