@@ -152,17 +152,17 @@
 	"artist": "Immortal",
 	"album": "Pure Holocaust (Reissue)",
 	"date": "1.9.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Immortal",
 	"album": "Battles in the North (Reissue)",
 	"date": "1.9.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Wolves in the Throne Room",
 	"album": "Thrice Woven",
 	"date": "22.9.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Arckanum",
 	"album": "Den Förstfödde",
@@ -177,20 +177,50 @@
 	"artist": "Hallatar",
 	"album": "No Stars Upon the Bridge",
 	"date": "7.10.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Samael",
 	"album": "Hegemony",
 	"date": "7.10.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Enslaved",
 	"album": "E",
 	"date": "13.10.2017",
-	"bought": false
+	"bought": true
 }, {
 	"artist": "Perturbator",
 	"album": "New Model",
 	"date": "20.10.2017",
+	"bought": true
+}, {
+	"artist": "Shining",
+	"album": "X: Varg Utan Flock",
+	"date": "5.1.2018",
+	"bought": false
+}, {
+	"artist": "Summoning",
+	"album": "With Doom We Come",
+	"date": "5.1.2018",
+	"bought": false
+}, {
+	"artist": "Taake",
+	"album": "Kong vinter",
+	"date": "5.1.2018",
+	"bought": false
+}, {
+	"artist": "Watain",
+	"album": "Triden Wolf Eclipse",
+	"date": "5.1.2018",
+	"bought": false
+}, {
+	"artist": "Ghost",
+	"album": "Ceremony and Devotion",
+	"date": "19.1.2018",
+	"bought": false
+}, {
+	"artist": "Machine Head",
+	"album": "Catharsis",
+	"date": "26.1.2018",
 	"bought": false
 }]
