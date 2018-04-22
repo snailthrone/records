@@ -31,7 +31,7 @@ app.use('/', _express2.default.static(_path2.default.join(__dirname, '/../public
 app.set('port', process.env.PORT || 8080);
 
 app.get('/', function (req, res) {
-  res.send('\n    <!DOCTYPE html>\n      <html>\n        <head>\n          <link rel="manifest" href="/manifest.json">\n          <title>foo</title>\n          <style type="text/css">\n            body {\n              margin: 0;\n              padding: 0;\n            }\n          </style>\n          ' + styles + '\n        </head>\n        <body>\n          <div id="app">' + markdown + '</div>\n          <script type="text/javascript" src="js/bundle.js" async></script>\n        </body>\n      </html> \n  ');
+  res.send('\n    <!DOCTYPE html>\n      <html lang="en">\n        <head>\n          <title>Records</title>\n          <meta name="author" content="Eemeli Martti">\n          <meta name="description" content="Records">\n          <meta name="viewport" content="width=device-width, initial-scale=1.0">\n          <link rel="manifest" href="/manifest.json">\n          <style type="text/css">\n            body {\n              margin: 0;\n              padding: 0;\n            }\n          </style>\n          ' + styles + '\n        </head>\n        <body>\n          <div id="app">' + markdown + '</div>\n          <script type="text/javascript" src="js/bundle.js" async></script>\n        </body>\n      </html> \n  ');
 });
 
 app.listen(app.get('port'), function () {

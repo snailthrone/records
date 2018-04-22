@@ -17,10 +17,13 @@ app.set('port', (process.env.PORT || 8080));
 app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
-      <html>
+      <html lang="en">
         <head>
+          <title>Records</title>
+          <meta name="author" content="Eemeli Martti">
+          <meta name="description" content="Records">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="manifest" href="/manifest.json">
-          <title>foo</title>
           <style type="text/css">
             body {
               margin: 0;
