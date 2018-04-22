@@ -137,7 +137,11 @@ var App = function (_React$Component) {
 					null,
 					'Records'
 				),
-				_react2.default.createElement(_Albums2.default, { data: this.state.data, value: this.state.value }),
+				this.state.data.length > 0 ? _react2.default.createElement(_Albums2.default, { data: this.state.data, value: this.state.value }) : _react2.default.createElement(
+					'p',
+					null,
+					'Ladataan...'
+				),
 				_react2.default.createElement(_Buttons2.default, { changeList: this.changeList, searchContent: this.searchContent, value: this.state.value })
 			);
 		}
