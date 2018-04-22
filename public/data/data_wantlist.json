@@ -1,454 +1,505 @@
 [{
-	"artist": "Alfahanne",
-	"album": "Alfapokalypse"
+	"artist": "Amoral",
+	"album": "Wound Creations",
+	"date": "null"
 }, {
 	"artist": "Amoral",
-	"album": "Wound Creations"
+	"album": "Decrowning",
+	"date": "null"
 }, {
 	"artist": "Amoral",
-	"album": "Decrowning"
+	"album": "Show Your Colors",
+	"date": "null"
 }, {
 	"artist": "Amoral",
-	"album": "Show Your Colors"
-}, {
-	"artist": "Amoral",
-	"album": "Beneath"
+	"album": "Beneath",
+	"date": "null"
 }, {
 	"artist": "Anaal Nathrakh",
-	"album": "The Codex Necro"
+	"album": "The Codex Necro",
+	"date": "null"
 }, {
 	"artist": "Anaal Nathrakh",
-	"album": "When Fire Rains Down From the Sky, Mankind Will Reap As It Has Sown"
+	"album": "When Fire Rains Down From the Sky, Mankind Will Reap As It Has Sown",
+	"date": "null"
 }, {
 	"artist": "Anaal Nathrakh",
-	"album": "Hell Is Empty, And All the Devils Are Here"
+	"album": "Hell Is Empty, And All the Devils Are Here",
+	"date": "null"
 }, {
 	"artist": "Anaal Nathrakh",
-	"album": "In the Constellation of the Black Widows"
+	"album": "In the Constellation of the Black Widows",
+	"date": "null"
 }, {
 	"artist": "Anaal Nathrakh",
-	"album": "Vanitas"
+	"album": "Vanitas",
+	"date": "null"
 }, {
 	"artist": "Aphex Twin",
-	"album": "Selected Ambient Works Volume II"
+	"album": "Selected Ambient Works Volume II",
+	"date": "null"
 }, {
 	"artist": "Aphex Twin",
-	"album": "Drukqs"
-}, {
-	"artist": "Aphex Twin",
-	"album": "Cheetah"
+	"album": "Drukqs",
+	"date": "null"
 }, {
 	"artist": "Arckanum",
-	"album": "Trulen"
+	"album": "Trulen",
+	"date": "null"
 }, {
 	"artist": "Arckanum",
-	"album": "Fran Marder"
+	"album": "Fran Marder",
+	"date": "null"
 }, {
 	"artist": "Arckanum",
-	"album": "Kostogher"
+	"album": "Kostogher",
+	"date": "null"
 }, {
 	"artist": "Arckanum",
-	"album": "Antikosmos"
+	"album": "Antikosmos",
+	"date": "null"
 }, {
 	"artist": "Arckanum",
-	"album": "Sviga Læ"
-}, {
-	"artist": "Avantasia",
-	"album": "The Metal Opera"
-}, {
-	"artist": "Avantasia",
-	"album": "The Metal Opera Pt. II"
-}, {
-	"artist": "Avantasia",
-	"album": "The Scarecrow"
-}, {
-	"artist": "Avantasia",
-	"album": "Angel of Babylon"
+	"album": "Sviga Læ",
+	"date": "null"
 }, {
 	"artist": "Bathory",
-	"album": "Nordland I"
+	"album": "Nordland I",
+	"date": "null"
 }, {
 	"artist": "Before the Dawn",
-	"album": "4.17 am"
+	"album": "My Darkness",
+	"date": "null"
 }, {
 	"artist": "Before the Dawn",
-	"album": "The Ghost"
+	"album": "4.17 am",
+	"date": "null"
+}, {
+	"artist": "Before the Dawn",
+	"album": "The Ghost",
+	"date": "null"
 }, {
 	"artist": "Converge",
-	"album": "Petitioning the Empty Sky"
+	"album": "Petitioning the Empty Sky",
+	"date": "null"
 }, {
 	"artist": "Converge",
-	"album": "You Fail Me"
+	"album": "You Fail Me",
+	"date": "null"
 }, {
 	"artist": "Converge",
-	"album": "No Heroes"
+	"album": "No Heroes",
+	"date": "null"
 }, {
 	"artist": "Converge",
-	"album": "Axe to Fall"
+	"album": "Axe to Fall",
+	"date": "null"
 }, {
 	"artist": "Cradle of Filth",
-	"album": "The Princile of Evil Made Flesh"
+	"album": "The Princile of Evil Made Flesh",
+	"date": "null"
 }, {
 	"artist": "Cradle of Filth",
-	"album": "Vempire or Dark Faerytales in Phallustein"
-}, {
-	"artist": "Cradle of Filth",
-	"album": "Dusk... And Her Embrace"
+	"album": "Vempire or Dark Faerytales in Phallustein",
+	"date": "null"
 }, {
 	"artist": "Blind Guardian",
-	"album": "Battalions of Fear"
+	"album": "Battalions of Fear",
+	"date": "null"
 }, {
 	"artist": "Blind Guardian",
-	"album": "Follow the Blind"
+	"album": "Follow the Blind",
+	"date": "null"
 }, {
 	"artist": "Blind Guardian",
-	"album": "Tales From the Twilight World"
+	"album": "Tales From the Twilight World",
+	"date": "null"
 }, {
 	"artist": "Dark Tranquillity",
-	"album": "The Gallery"
-}, {
-	"artist": "Dark Tranquillity",
-	"album": "Atoma"
+	"album": "The Gallery",
+	"date": "null"
 }, {
 	"artist": "Deadmau5",
-	"album": "Random Album Title"
-}, {
-	"artist": "Deadmau5",
-	"album": "while(1<2)"
+	"album": "Random Album Title",
+	"date": "null"
 }, {
 	"artist": "Deafheaven",
-	"album": "Roads to Judah"
-}, {
-	"artist": "Deafheaven",
-	"album": "Sunbather"
+	"album": "Roads to Judah",
+	"date": "null"
 }, {
 	"artist": "Deicide",
-	"album": "Once Upon the Cross"
+	"album": "Once Upon the Cross",
+	"date": "null"
 }, {
 	"artist": "Deströyer 666",
-	"album": "Terror Abraxas"
+	"album": "Terror Abraxas",
+	"date": "null"
 }, {
 	"artist": "Down",
-	"album": "Down IV Part II"
+	"album": "Down IV Part II",
+	"date": "null"
 },{
 	"artist": "Falkenbach",
-	"album": "...Magni Blandinn Ok Megintiri..."
+	"album": "...Magni Blandinn Ok Megintiri...",
+	"date": "null"
 }, {
 	"artist": "Falkenbach",
-	"album": "Ok Nefna Tysvar Ty"
+	"album": "Ok Nefna Tysvar Ty",
+	"date": "null"
 }, {
 	"artist": "Falkenbach",
-	"album": "Tiurida"
+	"album": "Tiurida",
+	"date": "null"
 }, {
 	"artist": "Falkenbach",
-	"album": "Asa"
+	"album": "Asa",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "Slavestate"
+	"album": "Slavestate",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "Pure"
+	"album": "Pure",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "Song of Love and Hate"
+	"album": "Song of Love and Hate",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "Hymns"
+	"album": "Hymns",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "Decline & Fall"
+	"album": "Decline & Fall",
+	"date": "null"
 }, {
 	"artist": "Godflesh",
-	"album": "A World Lit Only By Fire"
+	"album": "A World Lit Only By Fire",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Antichrist"
+	"album": "Antichrist",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Under the Sign of Hell"
+	"album": "Under the Sign of Hell",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Destroyer Or About How to Philosophize With the Hammer"
+	"album": "Destroyer Or About How to Philosophize With the Hammer",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Incipit Satan"
+	"album": "Incipit Satan",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Twilight of the Idols - In Conspiracy With Satan"
+	"album": "Twilight of the Idols - In Conspiracy With Satan",
+	"date": "null"
 }, {
 	"artist": "Gorgoroth",
-	"album": "Ad Majorem Sathanas Gloriam"
+	"album": "Ad Majorem Sathanas Gloriam",
+	"date": "null"
 }, {
 	"artist": "Horna",
-	"album": "Hengen tulet"
+	"album": "Hengen tulet",
+	"date": "null"
 }, {
 	"artist": "HIM",
-	"album": "Razorblade Romance"
+	"album": "Razorblade Romance",
+	"date": "null"
 }, {
 	"artist": "HIM",
-	"album": "Love Metal"
+	"album": "Love Metal",
+	"date": "null"
 }, {
 	"artist": "HIM",
-	"album": "Venus Doom"
-}, {
-	"artist": "Immortal",
-	"album": "Pure Holocaust"
-}, {
-	"artist": "Immortal",
-	"album": "Battles in the North"
+	"album": "Venus Doom",
+	"date": "null"
 }, {
 	"artist": "Inquisition",
-	"album": "Into the Infernal Regions of the Ancient Cult"
+	"album": "Into the Infernal Regions of the Ancient Cult",
+	"date": "null"
 }, {
 	"artist": "Inquisition",
-	"album": "Nefarious Dismal Orations"
+	"album": "Nefarious Dismal Orations",
+	"date": "null"
 }, {
 	"artist": "Inquisition",
-	"album": "Obscure Verses for the Multiverse"
+	"album": "Obscure Verses for the Multiverse",
+	"date": "null"
 }, {
 	"artist": "Isis",
-	"album": "Celestial"
+	"album": "Celestial",
+	"date": "null"
 }, {
 	"artist": "King Diamond",
-	"album": "The Spider's Lullabye"
+	"album": "The Spider's Lullabye",
+	"date": "null"
 }, {
 	"artist": "King Diamond",
-	"album": "Abigail II: The Revenge"
+	"album": "Abigail II: The Revenge",
+	"date": "null"
 }, {
 	"artist": "King Diamond",
-	"album": "The Puppet Master"
+	"album": "The Puppet Master",
+	"date": "null"
 }, {
 	"artist": "King Diamond",
-	"album": "Give Me Your Soul... Please"
+	"album": "Give Me Your Soul... Please",
+	"date": "null"
 }, {
 	"artist": "Kylesa",
-	"album": "Kylesa"
+	"album": "Kylesa",
+	"date": "null"
 }, {
 	"artist": "Kylesa",
-	"album": "Time Will Fuse Its Worth"
+	"album": "Time Will Fuse Its Worth",
+	"date": "null"
 }, {
 	"artist": "Mayhem",
-	"album": "Wolf's Lair Abyss"
+	"album": "Wolf's Lair Abyss",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "Melissa"
+	"album": "Melissa",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "In the Shadows"
+	"album": "In the Shadows",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "Time"
+	"album": "Time",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "Into the Unknown"
+	"album": "Into the Unknown",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "Dead Again"
+	"album": "Dead Again",
+	"date": "null"
 }, {
 	"artist": "Mercyful Fate",
-	"album": "9"
+	"album": "9",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "One Step More And You Die"
+	"album": "One Step More And You Die",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "Walking Cloud and Deep Red Sky, Flag Fluttered and the Sun Shined"
+	"album": "Walking Cloud and Deep Red Sky, Flag Fluttered and the Sun Shined",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "You Are There"
+	"album": "You Are There",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "Hymn to the Immortal Wind"
+	"album": "Hymn to the Immortal Wind",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "For My Parents"
+	"album": "For My Parents",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "The Last Dawn"
+	"album": "The Last Dawn",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "Rays of Darkness"
+	"album": "Rays of Darkness",
+	"date": "null"
 }, {
 	"artist": "Mono",
-	"album": "Requiem for Hell"
+	"album": "Requiem for Hell",
+	"date": "null"
 }, {
 	"artist": "Motörhead",
-	"album": "Motörhead"
-}, {
-	"artist": "My Bloody Valentine",
-	"album": "Loveless"
-}, {
-	"artist": "My Bloody Valentine",
-	"album": "M B V"
+	"album": "Motörhead",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "From Here To Eternity"
+	"album": "From Here To Eternity",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "The Firstborn Is Dead"
+	"album": "The Firstborn Is Dead",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Your Funeral... My Trial"
+	"album": "Your Funeral... My Trial",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Kicking Against the Bricks"
+	"album": "Kicking Against the Bricks",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Tender Prey"
+	"album": "Tender Prey",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Henry's Dream"
+	"album": "Henry's Dream",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Let Love In"
+	"album": "Let Love In",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "The Boatman's Call"
+	"album": "The Boatman's Call",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "No More Shall We Apart"
+	"album": "No More Shall We Apart",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Nocturama"
+	"album": "Nocturama",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Abattoir Blues / The Lyre of Orpheus"
+	"album": "Abattoir Blues / The Lyre of Orpheus",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Dig, Lazarus, Dig!!!"
+	"album": "Dig, Lazarus, Dig!!!",
+	"date": "null"
 }, {
 	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Push the Sky Away"
-}, {
-	"artist": "Nick Cave & The Bad Seeds",
-	"album": "Skeleton Treen"
+	"album": "Push the Sky Away",
+	"date": "null"
 }, {
 	"artist": "Nightbringer",
-	"album": "Death and the Black Work"
+	"album": "Death and the Black Work",
+	"date": "null"
 }, {
 	"artist": "Nightbringer",
-	"album": "Apocalypse Sun"
+	"album": "Apocalypse Sun",
+	"date": "null"
 }, {
 	"artist": "Nightbringer",
-	"album": "Hierophany of the Open Grave"
+	"album": "Hierophany of the Open Grave",
+	"date": "null"
 }, {
 	"artist": "Nightingale",
-	"album": "Alive Again: The Breathing Shadow Part IV"
+	"album": "Alive Again: The Breathing Shadow Part IV",
+	"date": "null"
 }, {
 	"artist": "Nightingale",
-	"album": "Invisible"
+	"album": "Invisible",
+	"date": "null"
 }, {
 	"artist": "Nightingale",
-	"album": "White Darkness"
+	"album": "White Darkness",
+	"date": "null"
 }, {
 	"artist": "Nightwish",
-	"album": "Angels Fall First"
+	"album": "Angels Fall First",
+	"date": "null"
 }, {
 	"artist": "Nightwish",
-	"album": "Wishmaster"
-}, {
-	"artist": "Nightwish",
-	"album": "Over the Hills and Far Away"
+	"album": "Over the Hills and Far Away",
+	"date": "null"
 }, {
 	"artist": "Nocturnus",
-	"album": "Thresholds"
+	"album": "Thresholds",
+	"date": "null"
 }, {
 	"artist": "Nocturnus",
-	"album": "Ethereal Tomb"
-}, {
-	"artist": "Omnium Gatherum",
-	"album": "Stuck Here On Snakes Way"
-}, {
-	"artist": "Omnium Gatherum",
-	"album": "The Redshift"
-}, {
-	"artist": "Oranssi Pazuzu",
-	"album": "Muukalainen puhuu"
+	"album": "Ethereal Tomb",
+	"date": "null"
 }, {
 	"artist": "Rammstein",
-	"album": "Herzeleid"
+	"album": "Herzeleid",
+	"date": "null"
 }, {
 	"artist": "Rammstein",
-	"album": "Mutter"
+	"album": "Mutter",
+	"date": "null"
 }, {
 	"artist": "Rammstein",
-	"album": "Reise, Reise"
+	"album": "Reise, Reise",
+	"date": "null"
 }, {
 	"artist": "Rotten Sound",
-	"album": "Murderworks"
+	"album": "Murderworks",
+	"date": "null"
 }, {
 	"artist": "Rotten Sound",
-	"album": "Species at War"
+	"album": "Species at War",
+	"date": "null"
 }, {
 	"artist": "Rotten Sound",
-	"album": "Abuse to Suffer"
+	"album": "Abuse to Suffer",
+	"date": "null"
 }, {
 	"artist": "Rush",
-	"album": "Vapor Trails"
+	"album": "Vapor Trails",
+	"date": "null"
 }, {
 	"artist": "Samael",
-	"album": "Blood Ritual"
+	"album": "Era One",
+	"date": "null"
 }, {
 	"artist": "Samael",
-	"album": "Era One"
+	"album": "Above",
+	"date": "null"
 }, {
 	"artist": "Samael",
-	"album": "Above"
-}, {
-	"artist": "Samael",
-	"album": "Lux Mundi"
+	"album": "Lux Mundi",
+	"date": "null"
 }, {
 	"artist": "Satyricon",
-	"album": "Dark Medieval Times"
+	"album": "Dark Medieval Times",
+	"date": "null"
 }, {
 	"artist": "Satyricon",
-	"album": "The Shadowthrone"
-}, {
-	"artist": "Shear",
-	"album": "Breaking the Stillness"
-}, {
-	"artist": "Slowdive",
-	"album": "Just for a Day"
-}, {
-	"artist": "Slowdive",
-	"album": "Souvlaki"
-}, {
-	"artist": "Slowdive",
-	"album": "Pygmalion"
+	"album": "The Shadowthrone",
+	"date": "null"
 }, {
 	"artist": "Stratovarius",
-	"album": "Fourth Dimension"
+	"album": "Fourth Dimension",
+	"date": "null"
 }, {
 	"artist": "Stratovarius",
-	"album": "Episode"
+	"album": "Episode",
+	"date": "null"
 }, {
 	"artist": "Stratovarius",
-	"album": "Elements Pt. 1"
+	"album": "Elements Pt. 1",
+	"date": "null"
 }, {
 	"artist": "Stratovarius",
-	"album": "Elements Pt. 2"
+	"album": "Elements Pt. 2",
+	"date": "null"
 }, {
 	"artist": "Windir",
-	"album": "Arntor"
+	"album": "Arntor",
+	"date": "null"
 }, {
 	"artist": "Windir",
-	"album": "Likferd"
+	"album": "Likferd",
+	"date": "null"
 }, {
 	"artist": "YUP",
-	"album": "Toppatakkeja ja Toledon terästä"
+	"album": "Outo elämä",
+	"date": "null"
 }, {
 	"artist": "YUP",
-	"album": "Homo Sapiens"
+	"album": "Leppymättömät",
+	"date": "null"
 }, {
 	"artist": "YUP",
-	"album": "Outo elämä"
+	"album": "Keppijumppaa",
+	"date": "null"
 }, {
 	"artist": "YUP",
-	"album": "Leppymättömät"
-}, {
-	"artist": "YUP",
-	"album": "Keppijumppaa"
-}, {
-	"artist": "YUP",
-	"album": "Vapauden kaupungit"
+	"album": "Vapauden kaupungit",
+	"date": "null"
 }]
