@@ -1,4 +1,5 @@
-sublime-gulp.log
-sublime-gulp.cache
+node_modules/
 python/
 ratings.csv
+sublime-gulp.cache
+sublime-gulp.log
