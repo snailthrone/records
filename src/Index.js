@@ -21,17 +21,17 @@ app.get('/', (req, res) => {
         <head>
           <link rel="manifest" href="/manifest.json">
           <title>foo</title>
-          <styles type="text/css">
+          <style type="text/css">
             body {
               margin: 0;
               padding: 0;
             }
-          </styles>
+          </style>
           ${styles}
         </head>
         <body>
           <div id="app">${markdown}</div>
-          <script type="text/javascript" src="js/bundle.js async"></script>
+          <script type="text/javascript" src="js/bundle.js" async></script>
         </body>
       </html> 
   `)

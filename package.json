@@ -5,14 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-local": "npm install babel-preset-es2015 babel-preset-react babelify react react-dom stripify --save-dev",
-    "build-html": "cat src/html/index.html > public/index.html && cat src/html/_dev_before.html src/html/index.html src/html/_dev_after.html > public/index.html",
-    "build-js": "browserify -d -e src/js/main.js -t [ babelify --comments false ] -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle > public/js/bundle.js",
-    "build": "npm run build-html && npm run build-js",
+    "build:client": "browserify -d -e src/main.js --extension .jsx -t [ babelify --comments false ] -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle > public/js/bundle.js",
+    "build:server": "babel src/ -d build/",
+    "build": "yarn build:server && yarn build:client",
     "start": "node build/Index.js",
     "dev": "npm run watch & browser-sync start --server public --files \"public/*.html, public/js/*.js, public/css/*.css\" --index=\"index.html\" --browser \"google chrome\"",
-    "watch-html": "chokidar \"src/html/index.html\" -c \"npm run build-html\"",
-    "watch-js": "watchify src/js/main.js -t babelify -o public/js/bundle.js --verbose --debug",
-    "watch": "npm run watch-html & npm run watch-js & wait"
+    "watch:client": "watchify src/main.js -v --extension .jsx -t babelify -o public/js/bundle.js --verbose --debug",
+    "watch:server": "nodemon src/Index.js --exec babel-node",
+    "watch": "yarn watch:client & yarn watch:server & wait"
   },
   "keywords": [],
   "author": "Eemeli Martti (@snailthrone)",

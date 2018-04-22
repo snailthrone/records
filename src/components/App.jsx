@@ -73,7 +73,13 @@ export default class App extends React.Component {
 		return (
 			<Container>
         <Header>Records</Header>
-        <Albums data={this.state.data} value={this.state.value} />
+        {
+          this.state.data.length > 0 ? (
+            <Albums data={this.state.data} value={this.state.value} />
+          ) : (
+            <p>Ladataan...</p>
+          )
+        }
         <Buttons changeList={this.changeList} searchContent={this.searchContent} value={this.state.value} />
 			</Container>
 		)
