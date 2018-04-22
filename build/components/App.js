@@ -9,8 +9,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _templateObject = _taggedTemplateLiteral(['\n  color: #222;\n  display: block;\n  font-family: \'Questrial\', Verdana, sans-serif;\n'], ['\n  color: #222;\n  display: block;\n  font-family: \'Questrial\', Verdana, sans-serif;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  background: #222;\n  color: #fff;\n  font-size: 30px;\n  margin: auto auto 20px auto;\n  padding: 20px 0;\n  text-align: center;\n  width: 100%;\n'], ['\n  background: #222;\n  color: #fff;\n  font-size: 30px;\n  margin: auto auto 20px auto;\n  padding: 20px 0;\n  text-align: center;\n  width: 100%;\n']);
 
-require('babel-polyfill');
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
