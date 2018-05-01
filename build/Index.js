@@ -22,18 +22,39 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var app = new _express2.default();
-var sheet = new _styledComponents.ServerStyleSheet();
-var markdown = (0, _server.renderToString)(sheet.collectStyles(_react2.default.createElement(_App2.default, { path: '' })));
-var styles = sheet.getStyleTags();
+const app = new _express2.default();
+const sheet = new _styledComponents.ServerStyleSheet();
+const markdown = (0, _server.renderToString)(sheet.collectStyles(_react2.default.createElement(_App2.default, { path: '' })));
+const styles = sheet.getStyleTags();
 
 app.use('/', _express2.default.static(_path2.default.join(__dirname, '/../public')));
 app.set('port', process.env.PORT || 8080);
 
-app.get('/', function (req, res) {
-  res.send('\n    <!DOCTYPE html>\n      <html lang="en">\n        <head>\n          <title>Records</title>\n          <meta name="author" content="Eemeli Martti">\n          <meta name="description" content="Records">\n          <meta name="viewport" content="width=device-width, initial-scale=1.0">\n          <link rel="manifest" href="/manifest.json">\n          <style type="text/css">\n            body {\n              margin: 0;\n              padding: 0;\n            }\n          </style>\n          ' + styles + '\n        </head>\n        <body>\n          <div id="app">' + markdown + '</div>\n          <script type="text/javascript" src="js/bundle.js" async></script>\n        </body>\n      </html> \n  ');
+app.get('/', (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <title>Records</title>
+          <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+          <meta name="author" content="Eemeli Martti">
+          <meta name="description" content="Records">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="manifest" href="/manifest.json">
+          <style type="text/css">
+            body {
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+          ${styles}
+        </head>
+        <body>
+          <div id="app">${markdown}</div>
+          <script type="text/javascript" src="js/bundle.js" async></script>
+        </body>
+      </html>
+  `);
 });
 
-app.listen(app.get('port'), function () {
-  return console.log('Application running, port: ', app.get('port'));
-});
+app.listen(app.get('port'), () => console.log('Application running, port: ', app.get('port')));

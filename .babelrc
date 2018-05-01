@@ -1,3 +1,17 @@
 {
-  "presets": ['react', 'env']
+  "presets": [
+    ["env", { 
+      "targets": { 
+        "browsers": ["last 1 chrome version"],
+        "node": "current"
+      }
+    }], 
+    ["react"]
+  ],
+  "plugins" : [
+    ["syntax-dynamic-import"],
+    ["babel-plugin-styled-components", {
+      "displayName": false
+    }]
+  ]
 }

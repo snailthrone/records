@@ -22,10 +22,11 @@ const Header = styled.h1`
 `;
 
 export default class App extends React.Component {
-	
+
   constructor(props) {
     super(props);
 		this.state = {
+      buttons: null,
 			path: this.props.path,
 			collection: [],
 			upcoming: [],
@@ -41,7 +42,7 @@ export default class App extends React.Component {
 		this.getData();
 	}
 
-	getData() { 
+	getData() {
 		axios.get(this.state.path + "/data/data_collection.json")
 			.then(result => this.setState(state => Object.assign(state, {'collection': result.data}, {data: result.data})))
       .catch(error => console.error(error));
@@ -69,8 +70,8 @@ export default class App extends React.Component {
   }
 
 	render() {
-		return (
-			<Container>
+    return (
+      <Container>
         <Header>Records</Header>
         {
           this.state.data.length > 0 ? (
@@ -80,7 +81,7 @@ export default class App extends React.Component {
           )
         }
         <Buttons changeList={this.changeList} searchContent={this.searchContent} value={this.state.value} />
-			</Container>
-		)
+      </Container>
+    )
 	}
 }

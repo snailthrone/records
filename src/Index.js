@@ -8,7 +8,7 @@ import App from './components/App';
 
 const app = new express();
 const sheet = new ServerStyleSheet();
-const markdown = renderToString(sheet.collectStyles(<App path='' />)) 
+const markdown = renderToString(sheet.collectStyles(<App path='' />))
 const styles = sheet.getStyleTags();
 
 app.use('/', express.static(path.join(__dirname, '/../public')));
@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
       <html lang="en">
         <head>
           <title>Records</title>
+          <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
           <meta name="author" content="Eemeli Martti">
           <meta name="description" content="Records">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@ app.get('/', (req, res) => {
           <div id="app">${markdown}</div>
           <script type="text/javascript" src="js/bundle.js" async></script>
         </body>
-      </html> 
+      </html>
   `)
 });
 
