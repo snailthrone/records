@@ -8,7 +8,7 @@
       "type": "image.jpg"
     }
   ],
-  "start_url": "document",
+  "start_url": "https://records-2018-04.herokuapp.com/",
   "display": "standalone",
   "theme_color": "#222",
   "background_color": "#FFF"
