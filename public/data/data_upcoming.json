@@ -1,1 +1,11 @@
-[{"artist":"Deafheaven","album":"Ordinary Corrupt Human Love","date":"13.7.2018","bought":false},{"artist":"Black Crucifixion","album":"Lightless Violent Chaos","date":"1.6.2018","bought":false},{"artist":"Urfaust","album":"Constellatory Practice","date":"25.5.2018","bought":false}{"artist":"DHG","album":"Satanic Art","date":"25.5.2018","bought":false}];
+[{
+  "artist": "Deafheaven",
+  "album": "Ordinary Corrupt Human Love",
+  "date": "13.7.2018",
+  "bought": false
+}, {
+  "artist": "Urfaust",
+  "album": "Constellatory Practice",
+  "date": "25.5.2018",
+  "bought": false
+}];

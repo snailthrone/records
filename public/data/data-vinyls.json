@@ -1,1 +1,266 @@
-[{"artist":"Beastmilk","album":"White Stains on Black Wax","cat#":"SVR91","date":"2010/2012",}, {"artist":"Beastmilk","album":"Use Your Deluge","cat#":"SVR092","date":"2012/2014"}, {"artist":"Kube X Eevil Stöö","album":"Pomo sapiens","cat#":"MONSP592","date":"2018"}, {"artist":"Mana Mana","album":"Maria Magdalena / Vaarallista","cat#":"SVR114","date":"1988/2012"}]
+[{
+  "artist": "Aivovuoto",
+  "album": "Dötöx",
+  "cat#": "MONSP486",
+  "date": 2017
+}, {
+  "artist": "Beastmilk",
+  "album": "White Stains on Black Wax",
+  "cat#": "SVR91",
+  "date": "2010"
+}, {
+  "artist": "Beastmilk",
+  "album": "Use Your Deluge",
+  "cat#": "SVR092",
+  "date": "2012"
+}, {
+  "artist": "Daft Punk",
+  "album": "Homework",
+  "cat#": null,
+  "date": "1996"
+}, {
+  "artist": "Daft Punk",
+  "album": "Random Access Memories",
+  "cat#": null,
+  "date": "2013"
+}, {
+  "artist": "Dan Swanö",
+  "album": "Moontower",
+  "cat#": "BMLP129",
+  "date": null
+}, {
+  "artist": "Dead Can Dance",
+  "album": "Dead Can Dance",
+  "cat#": "CAD 3622",
+  "date": null
+}, {
+  "artist": "Death",
+  "album": "Scream Bloody Gore",
+  "cat#": "RR7324",
+  "date": "1986"
+}, {
+  "artist": "Death",
+  "album": "Leprosy",
+  "cat#": null,
+  "date": "1988"
+}, {
+  "artist": "Deströyer 666",
+  "album": "Call of the Wild",
+  "cat#": "SOM457EP",
+  "date": 2018
+}, {
+  "artist": "Drudkh",
+  "album": null,
+  "cat#": "SUA086LP",
+  "date": "2018"
+}, {
+  "artist": "Eevil Stöö",
+  "album": "Iso vauva jeesus",
+  "cat#": "MONSP469",
+  "date": 2016
+}, {
+  "artist": "Ghost Brigade",
+  "album": "IV – One with the Storm",
+  "cat#": "SOM 343LP",
+  "date": "2014"
+}, {
+  "artist": "Gorgoroth",
+  "album": "Antichrist",
+  "cat#": "SSR110LP",
+  "date": null
+}, {
+  "artist": "Gorgoroth",
+  "album": "Under the Sign of Hell",
+  "cat#": "SSR100LP",
+  "date": null
+}, {
+  "artist": "Gorgoroth",
+  "album": "Destroyer – Or About How to Philosophize with the Hammer",
+  "cat#": "SSR096LP",
+  "date": null
+}, {
+  "artist": "Hallatar",
+  "album": "No Stars Upon the Bridge",
+  "cat#": "SVART119",
+  "date": "2017"
+}, {
+  "artist": "Hans Zimmer & Benjamin Wallfisch",
+  "album": "Blade Runne 2049 – Original Motion Picture Soundtrack",
+  "cat#": "",
+  "date": "2017"
+}, {
+  "artist": "Jess and the Ancient Ones",
+  "album": "Second Psychedelic Coming: The Aquarius Tapes",
+  "cat#": "SVR446",
+  "date": "2015"
+}, {
+  "artist": "Julma Henri & Syrjäytyneet",
+  "album": "Al-Qaida Finland",
+  "cat#": "MÖRSLP07",
+  "date": "2007"
+}, {
+  "artist": "Kalifornia-Keke",
+  "album": "Miinus",
+  "cat#": "MONSP588",
+  "date": null
+}, {
+  "artist": "Kube X Eevil Stöö",
+  "album": "Pomo sapiens",
+  "cat#": "MONSP592",
+  "date": "2018"
+}, {
+  "artist": "Kuolemanlaakso",
+  "album": "M. Laakso – Vol. 1: The Gothic Tapes",
+  "cat#": "SVART035",
+  "date": null
+}, {
+  "artist": "Mana Mana",
+  "album": "Maria Magdalena / Vaarallista",
+  "cat#": "SVR114",
+  "date": "1988"
+}, {
+  "artist": "Mana Mana",
+  "album": "Totuus palaa",
+  "cat#": "SVR143",
+  "date": "1990"
+}, {
+  "artist": "Mana Mana",
+  "album": "Murheen laakso",
+  "cat#": "SVR379",
+  "date": "2015"
+}, {
+  "artist": "Neurosis",
+  "album": "The Eye of Every Storm",
+  "cat#": "LP3673R",
+  "date": null
+}, {
+  "artist": "Nick Cave & The Bad Seeds",
+  "album": "Skeleton Tree",
+  "cat#": "BS009VS",
+  "date": "2017"
+}, {
+  "artist": "Nick Cave & The Bad Seeds",
+  "album": "The Boatman's Call",
+  "cat#": "Lpseeds10",
+  "date": "2017"
+}, {
+  "artist": "Opeth",
+  "album": "Ghost Reveries",
+  "cat#": "RRCAR 8123-1",
+  "date": "2005"
+}, {
+  "artist": "Oranssi Pazuzu",
+  "album": "Kevät/Värimyrsky",
+  "cat#": "SVART092 | SPIN089",
+  "date": "2017"
+}, {
+  "artist": "Oranssi Pazuzu",
+  "album": "Farmakologinen",
+  "cat#": "SRE185 | SPIN090",
+  "date": "2017"
+}, {
+  "artist": "Primordial",
+  "album": "Exile Amongst the Ruins",
+  "cat#": "",
+  "date": "2018"
+}, {
+  "artist": "Rapture",
+  "album": "Futile",
+  "cat#": "AR-083LP",
+  "date": null
+}, {
+  "artist": "Samael",
+  "album": "Blood Ritual",
+  "cat#": "88985452361",
+  "date": "1992"
+}, {
+  "artist": "Samael",
+  "album": "Hegemony",
+  "cat#": "NPR 718 VINYL",
+  "date": "2017"
+}, {
+  "artist": "Shining",
+  "album": "X – Varg utan flock",
+  "cat#": "SOM444LP",
+  "date": "2018"
+},{
+  "artist": "Summoning",
+  "album": "With Doom We Come",
+  "cat#": "NPR 767 VINYL",
+  "date": "2018"
+}, {
+  "artist": "Stranger Things 2",
+  "album": "Kylie Dixon & Michael Stein",
+  "cat#": "LSINV194LP",
+  "date": "2017"
+}, {
+  "artist": "Taake",
+  "album": "Kong Vinter",
+  "cat#": null,
+  "date": "2017"
+}, {
+  "artist": "Teksti-TV 666",
+  "album": "1, 2, 3",
+  "cat#": "SRE113",
+  "date": ""
+}, {
+  "artist": "The Exploding Eyes Orchestra",
+  "album": "The Exploding Eyes Orchestra",
+  "cat#": "SVR386",
+  "date": null
+}, {
+  "artist": "This Empty Flow",
+  "album": "Magenta Skycode",
+  "cat#": "SOLLP-015",
+  "date": "2011"
+}, {
+  "artist": "Tommishock / Kalifornia-Keke",
+  "album": "Rotaatio",
+  "cat#": "MONSP474",
+  "date": "2016"
+}, {
+  "artist": "Unkind",
+  "album": "Polku",
+  "cat#": "SVART019",
+  "date": "2017"
+}, {
+  "artist": "Vektor",
+  "album": "Black Future",
+  "cat#": "MOSH463LP",
+  "date": null
+}, {
+  "artist": "Vektor",
+  "album": "Outer Isolation",
+  "cat#": "MOSH464LP",
+  "date": null
+}, {
+  "artist": "Warning",
+  "album": "The Albums",
+  "cat#": null,
+  "date": null
+}, {
+  "artist": "White Lies",
+  "album": "Big TV",
+  "cat#": "3740907",
+  "date": "2013"
+}, {
+  "artist": "Wintersun",
+  "album": "The Forest Seasons",
+  "cat#": "NB 4058-4",
+  "date": "2017"
+}, {
+  "artist": "YUP",
+  "album": "Huuda harkiten",
+  "cat#": "SRE147",
+  "date": "1991"
+}, {
+  "artist": "YUP",
+  "album": "Toppatakkeja ja Toledon terästä",
+  "cat#": "SRE158",
+  "date": "1994"
+}, {
+  "artist": "YUP",
+  "album": "Homo Sapiens",
+  "cat#": "SRE220",
+  "date": "1994"
+}]
