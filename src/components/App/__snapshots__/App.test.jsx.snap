@@ -39318,25 +39318,25 @@ exports[`Renders correctly 1`] = `
       />
     </div>
     <div
-      className="sc-dnqmqq coKdRM"
+      className="app__button sc-dnqmqq coKdRM"
       onClick={[Function]}
     >
       CD
     </div>
     <div
-      className="sc-dnqmqq coKdRM"
+      className="app__button sc-dnqmqq coKdRM"
       onClick={[Function]}
     >
       Upcoming
     </div>
     <div
-      className="sc-dnqmqq coKdRM"
+      className="app__button sc-dnqmqq coKdRM"
       onClick={[Function]}
     >
       Wishlist
     </div>
     <div
-      className="sc-dnqmqq coKdRM"
+      className="app__button sc-dnqmqq coKdRM"
       onClick={[Function]}
     >
       Vinyls

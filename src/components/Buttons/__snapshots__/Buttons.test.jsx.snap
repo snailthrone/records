@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders correctly 1`] = `
+exports[`<Buttons /> Renders correctly 1`] = `
 <div
   className="sc-htpNat iKuSae"
 >
@@ -17,25 +17,25 @@ exports[`Renders correctly 1`] = `
     />
   </div>
   <div
-    className="sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb evpXSC"
     onClick={[Function]}
   >
     CD
   </div>
   <div
-    className="sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb evpXSC"
     onClick={[Function]}
   >
     Upcoming
   </div>
   <div
-    className="sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb evpXSC"
     onClick={[Function]}
   >
     Wishlist
   </div>
   <div
-    className="sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb evpXSC"
     onClick={[Function]}
   >
     Vinyls

@@ -33,25 +33,30 @@ const Button = styled.div`
 const Buttons = ({ changeList, searchContent, value }) => (
   <Wrapper>
     <Input
+      className="app__search-field"
       onChange={searchContent}
       value={value}
     />
     <Button
+      className="app__button"
       onClick={() => changeList('collection')}
     >
       CD
     </Button>
     <Button
+      className="app__button"
       onClick={() => changeList('upcoming')}
     >
       Upcoming
     </Button>
     <Button
+      className="app__button"
       onClick={() => changeList('wishlist')}
     >
       Wishlist
     </Button>
     <Button
+      className="app__button"
       onClick={() => changeList('vinyls')}
     >
       Vinyls
