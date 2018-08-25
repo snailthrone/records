@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Input from '../Input/Input'
 
 const Wrapper = styled.div`
-  background: inherit;
+  background-color: inherit;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -18,11 +18,12 @@ const Button = styled.div`
   background-color: #222222;
   color: #ffffff;
   display: inline-block;
+  font-family: 'Questrial', Verdana, sans-serif;
+  font-size: 14px;
   font-weight: bold;
   margin: auto;
   padding: 20px 0;
   text-align: center;
-  top: 20px;
   width: ${100 / 4}%;
   &:hover {
     background: #7F7E7E;
@@ -47,7 +48,7 @@ const Buttons = ({ changeList, searchContent, value }) => (
       className="app__button"
       onClick={() => changeList('upcoming')}
     >
-      Upcoming
+      Coming
     </Button>
     <Button
       className="app__button"

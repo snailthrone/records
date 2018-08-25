@@ -1,19 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders corretly 1`] = `
-<div
-  className="sc-bdVaJa bkHhel"
+<ul
+  className="sc-bdVaJa euFgJ"
 >
   <h3
-    className="sc-bwzfXH eyzaBJ"
+    className="sc-bwzfXH fXTzBZ"
   >
     Artist – Album (date)
   </h3>
-  <p
-    className="sc-htpNat bMWPWV"
+  <li
+    className="sc-htpNat eyBljw"
   >
-    1
-    .
     <span
       className="artist sc-bxivhb bUZGRr"
     >
@@ -36,12 +34,10 @@ exports[`Renders corretly 1`] = `
       13.7.2018
       )
     </span>
-  </p>
-  <p
-    className="sc-htpNat glttxt"
+  </li>
+  <li
+    className="sc-htpNat gYFGsz"
   >
-    2
-    .
     <span
       className="artist sc-bxivhb bUZGRr"
     >
@@ -64,18 +60,18 @@ exports[`Renders corretly 1`] = `
       25.5.2018
       )
     </span>
-  </p>
-</div>
+  </li>
+</ul>
 `;
 
 exports[`Renders corretly if value doesn't match 1`] = `
-<div
-  className="sc-bdVaJa bkHhel"
+<ul
+  className="sc-bdVaJa euFgJ"
 >
   <h3
-    className="sc-bwzfXH eyzaBJ"
+    className="sc-bwzfXH fXTzBZ"
   >
     Artist – Album (date)
   </h3>
-</div>
+</ul>
 `;

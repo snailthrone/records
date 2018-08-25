@@ -18,11 +18,11 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Container = _styledComponents2.default.div(['font-size:14px;line-height:1.75;margin:auto;max-width:600px;padding-bottom:100px;width:95%;@media screen and (min-width:600px){font-size:18px;width:100%;}']);
+const Container = _styledComponents2.default.ul(['list-style:none;margin:10px auto auto auto;max-width:600px;padding:0 0 100px 0;width:90%;@media screen and (min-width:600px){width:100%;}']);
 
-const Heading = _styledComponents2.default.h3(['font-weight:700;margin:auto auto 10px auto;']);
+const Heading = _styledComponents2.default.h3(['font-family:\'Questrial\',Verdana,sans-serif;font-size:16px;font-weight:700;margin:auto auto 10px auto;']);
 
-const Album = _styledComponents2.default.p(['margin:auto auto 15px auto;text-decoration:', ';'], ({ bought }) => bought ? 'line-through' : 'none');
+const Album = _styledComponents2.default.li(['font-family:\'Questrial\',Verdana,sans-serif;font-size:12px;line-height:1.35em;margin:auto auto .4em auto;text-decoration:', ';@media screen and (min-width:600px){font-size:18px;}'], ({ bought }) => bought ? 'line-through' : 'none');
 
 const AlbumArtist = _styledComponents2.default.span(['']);
 const AlbumTitle = _styledComponents2.default.span(['']);
@@ -43,8 +43,6 @@ const Albums = ({ data, value }) => _react2.default.createElement(
       return _react2.default.createElement(
         Album,
         { bought: bought, key: `album-'${i + 1}` },
-        i + 1,
-        '.',
         _react2.default.createElement(
           AlbumArtist,
           { className: 'artist' },

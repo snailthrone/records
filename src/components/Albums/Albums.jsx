@@ -2,27 +2,33 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  font-size: 14px;
-  line-height: 1.75;
-  margin: auto;
+const Container = styled.ul`
+  list-style: none;
+  margin: 10px auto auto auto;
   max-width: 600px;
-  padding-bottom: 100px;
-  width: 95%;
+  padding: 0 0 100px 0;
+  width: 90%;
   @media screen and (min-width: 600px) {
-    font-size: 18px;
     width: 100%;
   }
 `
 
 const Heading = styled.h3`
+  font-family: 'Questrial', Verdana, sans-serif;
+  font-size: 16px;
   font-weight: 700;
   margin: auto auto 10px auto;
 `
 
-const Album = styled.p`
-  margin: auto auto 15px auto;
+const Album = styled.li`
+  font-family: 'Questrial', Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 1.35em;
+  margin: auto auto .4em auto;
   text-decoration: ${({ bought }) => (bought ? 'line-through' : 'none')};
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+  }
 `
 
 const AlbumArtist = styled.span``
@@ -44,8 +50,6 @@ const Albums = ({ data, value }) => (
         ) {
           return (
             <Album bought={bought} key={`album-'${(i + 1)}`}>
-              {i + 1}
-              .
               <AlbumArtist className="artist">
                 {' '}
                 {artist}

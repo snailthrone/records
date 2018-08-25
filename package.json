@@ -6,10 +6,10 @@
     "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public/js --out-file bundle.js src/Index.jsx",
     "build:server": "BABEL_ENV=production babel src/ -d build/",
     "build": "yarn build:server && yarn build:client",
+    "dev": "yarn watch:server && yarn watch:client",
     "lint": "eslint --ext .js,.jsx src/",
     "start": "node build/Server.js",
     "test": "jest --coverage --env=jsdom --notify",
-    "watch": "yarn watch:server && yarn watch:client",
     "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\"  --out-dir public/js --out-file bundle.js src/Index.jsx",
     "watch:server": "nodemon --exec babel-node src/Server.jsx",
     "watch:test": "jest --watch"

@@ -12,14 +12,16 @@ import updateData from '../update-data'
 const Container = styled.div`
   color: #222222;
   display: block;
-  font-family: 'Questrial', Verdana, sans-serif;
+  margin: auto;
+  width: 100%;
 `
 
 const Header = styled.h1`
   background-color: #222222;
   color: #FFFFFF;
+  font-family: 'Questrial', Verdana, sans-serif;
   font-size: 30px;
-  margin: auto auto 20px auto;
+  margin: auto;
   padding: 20px 0;
   text-align: center;
   width: 100%;

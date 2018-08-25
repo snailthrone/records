@@ -2,7 +2,7 @@
 
 exports[`<Buttons /> Renders correctly 1`] = `
 <div
-  className="sc-htpNat iKuSae"
+  className="sc-htpNat eUEVxm"
 >
   <div
     className="sc-bdVaJa ewtIVp"
@@ -17,25 +17,25 @@ exports[`<Buttons /> Renders correctly 1`] = `
     />
   </div>
   <div
-    className="app__button sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb czGGTy"
     onClick={[Function]}
   >
     CD
   </div>
   <div
-    className="app__button sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb czGGTy"
     onClick={[Function]}
   >
-    Upcoming
+    Coming
   </div>
   <div
-    className="app__button sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb czGGTy"
     onClick={[Function]}
   >
     Wishlist
   </div>
   <div
-    className="app__button sc-bxivhb evpXSC"
+    className="app__button sc-bxivhb czGGTy"
     onClick={[Function]}
   >
     Vinyls
