@@ -1,6 +1,6 @@
+.cache/
+dist/
 node_modules/
-python/
-ratings.csv
 sublime-gulp.cache
 sublime-gulp.log
 .DS_Store
