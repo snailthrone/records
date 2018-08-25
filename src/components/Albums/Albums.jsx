@@ -38,9 +38,9 @@ const Albums = ({ data, value }) => (
       data.map(({
         artist, album, bought, date,
       }, i) => {
-        if (artist.toLowerCase().match(value)
-            || album.toLowerCase().match(value)
-            || date.match(value)
+        if (artist.toLowerCase().match(value.toLowerCase())
+            || album.toLowerCase().match(value.toLowerCase())
+            || date.match(value.toLowerCase())
         ) {
           return (
             <Album bought={bought} key={`album-'${(i + 1)}`}>
