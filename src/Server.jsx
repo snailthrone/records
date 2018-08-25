@@ -5,7 +5,7 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet } from 'styled-components'
 
-import App from './components/App'
+import App from './components/App/App'
 
 const app = new Express()
 const sheet = new ServerStyleSheet()

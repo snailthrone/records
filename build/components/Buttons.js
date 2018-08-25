@@ -24,7 +24,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const Wrapper = _styledComponents2.default.div(['background:inherit;bottom:0;left:0;margin:auto;position:fixed;width:100%;z-index:100;']);
 
-const Button = _styledComponents2.default.div(['background-color:#222222;color:#ffffff;display:inline-block;font-weight:bold;margin:auto;padding:20px 0;text-align:center;top:20px;width:', '%;&:hover{background:#7F7E7E;cursor:pointer;}'], 100 / 3);
+const Button = _styledComponents2.default.div(['background-color:#222222;color:#ffffff;display:inline-block;font-weight:bold;margin:auto;padding:20px 0;text-align:center;top:20px;width:', '%;&:hover{background:#7F7E7E;cursor:pointer;}'], 100 / 4);
 
 const Buttons = ({ changeList, searchContent, value }) => _react2.default.createElement(
   Wrapper,
@@ -38,7 +38,7 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
     {
       onClick: () => changeList('collection')
     },
-    'Collection'
+    'CD'
   ),
   _react2.default.createElement(
     Button,
@@ -53,6 +53,13 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
       onClick: () => changeList('wantlist')
     },
     'Wishlist'
+  ),
+  _react2.default.createElement(
+    Button,
+    {
+      onClick: () => changeList('vinyls')
+    },
+    'Vinyls'
   )
 );
 

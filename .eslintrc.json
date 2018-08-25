@@ -9,11 +9,7 @@
         "strict": 0,
         "semi": ["error", "never"],
         "import/prefer-default-export": ["off"],
-        "no-use-before-define": ["error", { "functions": false }],
-        "prefer-destructuring": ["error", {
-          "array": true,
-          "object": true
-        }]
+        "no-use-before-define": ["error", { "functions": false }]
       },
     "parser": "babel-eslint"
 }

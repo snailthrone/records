@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import Input from './Input'
+import Input from '../Input/Input'
 
 const Wrapper = styled.div`
   background: inherit;
@@ -23,7 +23,7 @@ const Button = styled.div`
   padding: 20px 0;
   text-align: center;
   top: 20px;
-  width: ${100 / 3}%;
+  width: ${100 / 4}%;
   &:hover {
     background: #7F7E7E;
     cursor: pointer;
@@ -39,7 +39,7 @@ const Buttons = ({ changeList, searchContent, value }) => (
     <Button
       onClick={() => changeList('collection')}
     >
-      Collection
+      CD
     </Button>
     <Button
       onClick={() => changeList('upcoming')}
@@ -47,9 +47,14 @@ const Buttons = ({ changeList, searchContent, value }) => (
       Upcoming
     </Button>
     <Button
-      onClick={() => changeList('wantlist')}
+      onClick={() => changeList('wishlist')}
     >
       Wishlist
+    </Button>
+    <Button
+      onClick={() => changeList('vinyls')}
+    >
+      Vinyls
     </Button>
   </Wrapper>
 )

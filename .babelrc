@@ -5,7 +5,8 @@
         "browsers": ["last 1 chrome version"],
         "node": "current"
       }
-    }], 
+    }],
+    ["stage-2"], 
     ["react"]
   ],
   "plugins" : [
