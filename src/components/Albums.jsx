@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
-const Albums = styled.div`
+const Container = styled.div`
   font-size: 14px;
   line-height: 1.75;
   margin: auto;
@@ -12,37 +13,73 @@ const Albums = styled.div`
     font-size: 18px;
     width: 100%;
   }
-`;
+`
 
 const Heading = styled.h3`
   font-weight: 700;
   margin: auto auto 10px auto;
-`;
+`
 
 const Album = styled.p`
-	margin: auto auto 15px auto;
-	text-decoration: ${props => props.bought ? 'line-through' : 'none'};
-`;
+  margin: auto auto 15px auto;
+  text-decoration: ${({ bought }) => (bought ? 'line-through' : 'none')};
+`
 
-const AlbumArtist = styled.span``;
-const AlbumTitle = styled.span``;
-const AlbumDate = styled.span``;
+const AlbumArtist = styled.span``
+const AlbumTitle = styled.span``
+const AlbumDate = styled.span``
 
-export default props => (
-	<Albums>
-	<Heading>Artist – Album (date)</Heading>
-	{
-		props.data.map((data, i) => {
-			if (data.artist.toLowerCase().match(props.value) || data.album.toLowerCase().match(props.value) || data.date.match(props.value)) {
-				return (
-					<Album bought={data.bought} key={i}>{i+1}.
-						<AlbumArtist className="artist"> {data.artist}</AlbumArtist> –
-						<AlbumTitle className="album"> {data.album} </AlbumTitle>
-						{(data.date && data.date != 'null') && <AlbumDate className="date">({data.date})</AlbumDate>}
-					</Album>
-				);
-			}
-		})
-	}
-	</Albums>
-);
+const Albums = ({ data, value }) => (
+  <Container>
+    <Heading>
+      Artist – Album (date)
+    </Heading>
+    {
+      data.map(({
+        artist, album, bought, date,
+      }, i) => {
+        if (artist.toLowerCase().match(value)
+            || album.toLowerCase().match(value)
+            || date.match(value)
+        ) {
+          return (
+            <Album bought={bought} key={`album-'${(i + 1)}`}>
+              {i + 1}
+              .
+              <AlbumArtist className="artist">
+                {' '}
+                {artist}
+              </AlbumArtist>
+              {' '}
+              –
+              <AlbumTitle className="album">
+                {' '}
+                {album}
+                {' '}
+              </AlbumTitle>
+              {(date && date !== 'null') && (
+              <AlbumDate className="date">
+                (
+                {date}
+                )
+              </AlbumDate>
+              )}
+            </Album>
+          )
+        }
+        return false
+      })
+    }
+  </Container>
+)
+
+Albums.propTypes = {
+  data: PropTypes.arrayOf(() => {}).isRequired,
+  value: PropTypes.string,
+}
+
+Albums.defaultProps = {
+  value: '',
+}
+
+export default Albums
