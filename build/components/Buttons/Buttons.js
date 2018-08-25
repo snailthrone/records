@@ -30,12 +30,14 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
   Wrapper,
   null,
   _react2.default.createElement(_Input2.default, {
+    className: 'app__search-field',
     onChange: searchContent,
     value: value
   }),
   _react2.default.createElement(
     Button,
     {
+      className: 'app__button',
       onClick: () => changeList('collection')
     },
     'CD'
@@ -43,6 +45,7 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
   _react2.default.createElement(
     Button,
     {
+      className: 'app__button',
       onClick: () => changeList('upcoming')
     },
     'Upcoming'
@@ -50,6 +53,7 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
   _react2.default.createElement(
     Button,
     {
+      className: 'app__button',
       onClick: () => changeList('wishlist')
     },
     'Wishlist'
@@ -57,6 +61,7 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
   _react2.default.createElement(
     Button,
     {
+      className: 'app__button',
       onClick: () => changeList('vinyls')
     },
     'Vinyls'
