@@ -22,7 +22,6 @@ const Header = styled.h1`
   text-align: center;
   width: 100%;
 `
-
 class App extends Component {
   constructor(props) {
     super(props)
