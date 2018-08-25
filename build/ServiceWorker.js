@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
 const CACHE_NAME = 'my-cache';
 
-const urlsToCache = ["/", "/js/bundle.js", "/data/"];
+const urlsToCache = ['/', '/js/bundle.js', '/data/'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => {
@@ -16,12 +16,12 @@ self.addEventListener('fetch', event => {
     if (response) {
       return response;
     }
-    let fetchRequest = event.request.clone();
+    const fetchRequest = event.request.clone();
     return fetch(fetchRequest).then(response => {
       if (!response || response.status !== 200 || response.type !== 'basic') {
         return response;
       }
-      let responseToCache = response.clone();
+      const responseToCache = response.clone();
       caches.open(CACHE_NAME).then(cache => {
         cache.put(event.request, responseToCache);
       });

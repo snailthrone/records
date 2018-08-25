@@ -18,7 +18,7 @@ const Albums = _styledComponents2.default.div(['font-size:14px;line-height:1.75;
 
 const Heading = _styledComponents2.default.h3(['font-weight:700;margin:auto auto 10px auto;']);
 
-const Album = _styledComponents2.default.p(['margin:auto auto 15px auto;text-decoration:', ';'], props => props.bought ? 'line-through' : 'none');
+const Album = _styledComponents2.default.p(['margin:auto auto 15px auto;text-decoration:', ';'], ({ bought }) => bought ? 'line-through' : 'none');
 
 const AlbumArtist = _styledComponents2.default.span(['']);
 const AlbumTitle = _styledComponents2.default.span(['']);
