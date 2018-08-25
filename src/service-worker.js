@@ -2,7 +2,7 @@
 const cacheName = 'cache-v1'
 
 const filesToCache = [
-  './js/bundle.js',
+  './app.js',
 ]
 
 self.addEventListener('install', (event) => {

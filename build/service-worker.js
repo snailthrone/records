@@ -3,7 +3,7 @@
 /* eslint no-console: 0 */ // --> OFF
 const cacheName = 'cache-v1';
 
-const filesToCache = ['./js/bundle.js'];
+const filesToCache = ['./app.js'];
 
 self.addEventListener('install', event => {
   console.log('Event: Install');
