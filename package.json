@@ -1,39 +1,43 @@
 {
-  "name": "Records",
+  "name": "records",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install-local": "yarn add babel-preset-es2015 babel-preset-react babelify react react-dom stripify --save-dev",
-    "build:client": "browserify src/main.js --extension .jsx -t babelify -g [ envify --NODE_ENV production ] -g uglifyify | uglifyjs --compress --mangle > public/js/bundle.js",
+    "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public/js --out-file bundle.js src/Index.jsx",
     "build:server": "babel src/ -d build/",
-    "build:service-worker": "browserify src/ServiceWorker.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify | uglifyjs --compress --mangle > public/js/sw.js",
     "build": "yarn build:server && yarn build:client",
-    "start": "node build/Index.js",
-    "dev": "yarn watch & browser-sync start --server public --files \"public/*.html, public/js/*.js, public/css/*.css\" --index=\"index.html\" --browser \"google chrome\"",
-    "watch:client": "watchify src/main.js -v --extension .jsx -t babelify -o public/js/bundle.js --verbose --debug",
-    "watch:server": "nodemon src/Index.js --exec babel-node",
-    "watch": "yarn watch:client & yarn watch:server & wait"
+    "lint": "eslint --ext .js,.jsx src/",
+    "start": "node build/Server.jsx",
+    "test": "jest --coverage --env=jsdom --notify",
+    "watch": "yarn watch:server && yarn watch:client",
+    "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\"  --out-dir public/js --out-file bundle.js src/Index.jsx",
+    "watch:server": "nodemon --exec babel-node src/Server.jsx",
+    "watch:test": "jest --watch"
   },
   "keywords": [],
   "author": "Eemeli Martti (@snailthrone)",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "babelify": "^8.0.0",
-    "browser-sync": "2.23.7",
-    "browserify": "^16.2.0",
-    "chokidar-cli": "1.2.0",
-    "envify": "^4.1.0",
-    "stripify": "6.0.0",
-    "uglifyify": "^4.0.5",
-    "watchify": "^3.11.0"
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.0",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3",
+    "react-test-renderer": "^16.4.2",
+    "regenerator-runtime": "^0.12.1"
   },
   "engines": {
-    "node": "9.8.0"
+    "node": "10.9.0"
   },
   "main": "Index.js",
   "repository": "git@github.com:snailthrone/records.git",
@@ -42,11 +46,19 @@
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.0",
     "express": "^4.16.3",
-    "npm": "^6.0.0",
+    "heroku": "^7.12.2",
+    "prop-types": "^15.6.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "styled-components": "^3.2.6",
-    "uglify-es": "^3.3.9"
+    "styled-components": "^3.2.6"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/setup.js"
+    ]
   }
 }

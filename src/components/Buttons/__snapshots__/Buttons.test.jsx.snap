@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="sc-htpNat iKuSae"
+>
+  <div
+    className="sc-bdVaJa ewtIVp"
+  >
+    <input
+      className="sc-bwzfXH gYQVeA"
+      name="search-field"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value="Opeth"
+    />
+  </div>
+  <div
+    className="sc-bxivhb evpXSC"
+    onClick={[Function]}
+  >
+    CD
+  </div>
+  <div
+    className="sc-bxivhb evpXSC"
+    onClick={[Function]}
+  >
+    Upcoming
+  </div>
+  <div
+    className="sc-bxivhb evpXSC"
+    onClick={[Function]}
+  >
+    Wishlist
+  </div>
+  <div
+    className="sc-bxivhb evpXSC"
+    onClick={[Function]}
+  >
+    Vinyls
+  </div>
+</div>
+`;

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders corretly 1`] = `
+<div
+  className="sc-bdVaJa bkHhel"
+>
+  <h3
+    className="sc-bwzfXH eyzaBJ"
+  >
+    Artist – Album (date)
+  </h3>
+  <p
+    className="sc-htpNat bMWPWV"
+  >
+    1
+    .
+    <span
+      className="artist sc-bxivhb bUZGRr"
+    >
+       
+      Deafheaven
+    </span>
+     
+    –
+    <span
+      className="album sc-ifAKCX cFlEyZ"
+    >
+       
+      Ordinary Corrupt Human Love
+       
+    </span>
+    <span
+      className="date sc-EHOje jvzENE"
+    >
+      (
+      13.7.2018
+      )
+    </span>
+  </p>
+  <p
+    className="sc-htpNat glttxt"
+  >
+    2
+    .
+    <span
+      className="artist sc-bxivhb bUZGRr"
+    >
+       
+      Urfaust
+    </span>
+     
+    –
+    <span
+      className="album sc-ifAKCX cFlEyZ"
+    >
+       
+      Constellatory Practice
+       
+    </span>
+    <span
+      className="date sc-EHOje jvzENE"
+    >
+      (
+      25.5.2018
+      )
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Renders corretly if value doesn't match 1`] = `
+<div
+  className="sc-bdVaJa bkHhel"
+>
+  <h3
+    className="sc-bwzfXH eyzaBJ"
+  >
+    Artist – Album (date)
+  </h3>
+</div>
+`;

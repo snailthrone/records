@@ -5,7 +5,8 @@
         "browsers": ["last 1 chrome version"],
         "node": "current"
       }
-    }], 
+    }],
+    ["stage-2"], 
     ["react"]
   ],
   "plugins" : [
@@ -13,5 +14,9 @@
     ["babel-plugin-styled-components", {
       "displayName": false
     }]
+  ],
+  "ignore":[
+    "src/setup.js",
+    "**/*.test.js"
   ]
 }
