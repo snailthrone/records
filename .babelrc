@@ -1,12 +1,12 @@
 {
   "presets": [
-    ["env", { 
-      "targets": { 
+    ["env", {
+      "targets": {
         "browsers": ["last 1 chrome version"],
         "node": "current"
       }
     }],
-    ["stage-2"], 
+    ["stage-2"],
     ["react"]
   ],
   "plugins" : [
@@ -15,8 +15,12 @@
       "displayName": false
     }]
   ],
-  "ignore":[
-    "src/setup.js",
-    "**/*.test.js"
-  ]
+  "env": {
+    "production": {
+      "ignore":[
+        "src/setup.js",
+        "*.test.js"
+      ]
+    }
+  }
 }
