@@ -6,6 +6,7 @@
     "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public/js --out-file bundle.js src/Index.jsx",
     "build:server": "BABEL_ENV=production babel src/ -d build/",
     "build": "yarn build:server && yarn build:client",
+    "build:service-worker": "BABEL_ENV=production babel service-worker.js -d public/",
     "dev": "yarn watch:server && yarn watch:client",
     "lint": "eslint --ext .js,.jsx src/",
     "start": "node build/Server.js",

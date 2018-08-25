@@ -30,9 +30,7 @@ describe('<Buttons />', () => {
     const buttons = wrapper.find('.app__button')
     buttons.forEach((button) => {
       button.simulate('click')
-      expect(changeList).toHaveBeenCalledWith('collection');
+      expect(changeList).toHaveBeenCalledWith('collection')
     })
-
   })
-
 })
