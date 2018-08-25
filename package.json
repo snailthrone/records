@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public/js --out-file bundle.js src/Index.jsx",
     "build:server": "babel src/ -d build/",
     "build": "yarn build:server && yarn build:client",
-    "start": "node build/Server.jsx",
     "lint": "eslint --ext .js,.jsx src/",
-    "watch:server": "nodemon src/Server.jsx --exec babel-node",
-    "watch": "yarn watch:client & yarn watch:server & wait"
+    "start": "node build/Server.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "yarn watch:server && yarn watch:client",
+    "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\" --out-dir public/js --out-file bundle.js src/Index.jsx",
+    "watch:server": "nodemon --exec babel-node src/Server.jsx"
   },
   "keywords": [],
   "author": "Eemeli Martti (@snailthrone)",
