@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateData = undefined;
 
 var _data_collection = require('../data/data_collection');
 
@@ -23,14 +22,14 @@ var _data_wantlist2 = _interopRequireDefault(_data_wantlist);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const updateData = exports.updateData = value => {
+exports.default = value => {
   if (value === 'collection') {
     return { data: _data_collection2.default };
   }
   if (value === 'upcoming') {
     return { data: _data_upcoming2.default };
   }
-  if (value === 'wantlist') {
+  if (value === 'wishlist') {
     return { data: _data_wantlist2.default };
   }
   return { data: _data_vinyls2.default };

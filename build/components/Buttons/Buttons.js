@@ -16,7 +16,7 @@ var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Input = require('./Input');
+var _Input = require('../Input/Input');
 
 var _Input2 = _interopRequireDefault(_Input);
 
@@ -50,7 +50,7 @@ const Buttons = ({ changeList, searchContent, value }) => _react2.default.create
   _react2.default.createElement(
     Button,
     {
-      onClick: () => changeList('wantlist')
+      onClick: () => changeList('wishlist')
     },
     'Wishlist'
   ),

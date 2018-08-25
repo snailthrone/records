@@ -16,7 +16,7 @@ var _server = require('react-dom/server');
 
 var _styledComponents = require('styled-components');
 
-var _App = require('./components/App');
+var _App = require('./components/App/App');
 
 var _App2 = _interopRequireDefault(_App);
 

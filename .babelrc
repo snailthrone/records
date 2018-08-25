@@ -14,5 +14,9 @@
     ["babel-plugin-styled-components", {
       "displayName": false
     }]
+  ],
+  "ignore":[
+    "src/setup.js",
+    "**/*.test.js"
   ]
 }
