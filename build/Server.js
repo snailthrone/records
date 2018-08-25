@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
         </head>
         <body>
           <div id="app">${markdown}</div>
-          <script type="text/javascript" src="js/bundle.js" async></script>
+          <script type="text/javascript" src="app.js" async></script>
         </body>
       </html>
   `);

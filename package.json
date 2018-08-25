@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public/js --out-file bundle.js src/Index.jsx",
+    "build:client": "parcel build --detailed-report --log-level 3 --no-cache --out-dir public --out-file app.js src/Index.jsx",
     "build:server": "BABEL_ENV=production babel src/ -d build/",
     "build": "yarn build:server && yarn build:client",
     "build:service-worker": "BABEL_ENV=production babel service-worker.js -d public/",
@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.jsx src/",
     "start": "node build/Server.js",
     "test": "jest --coverage --env=jsdom --notify",
-    "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\"  --out-dir public/js --out-file bundle.js src/Index.jsx",
+    "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\"  --out-dir public --out-file app.js src/Index.jsx",
     "watch:server": "nodemon --exec babel-node src/Server.jsx",
     "watch:test": "jest --watch"
   },
