@@ -22,7 +22,7 @@ const Container = _styledComponents2.default.ul(['list-style:none;margin:10px au
 
 const Heading = _styledComponents2.default.h3(['font-family:\'Questrial\',Verdana,sans-serif;font-size:16px;font-weight:700;margin:auto auto 10px auto;']);
 
-const Album = _styledComponents2.default.li(['font-family:\'Questrial\',Verdana,sans-serif;font-size:12px;line-height:1.35em;margin:auto auto .4em auto;text-decoration:', ';@media screen and (min-width:600px){font-size:18px;}'], ({ bought }) => bought ? 'line-through' : 'none');
+const Album = _styledComponents2.default.li(['font-family:\'Questrial\',Verdana,sans-serif;font-size:12px;line-height:1.35em;margin:auto auto .4em auto;text-decoration:', ';@media screen and (min-width:600px){font-size:14px;}'], ({ bought }) => bought ? 'line-through' : 'none');
 
 const AlbumArtist = _styledComponents2.default.span(['']);
 const AlbumTitle = _styledComponents2.default.span(['']);
