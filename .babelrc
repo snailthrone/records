@@ -12,7 +12,9 @@
   "plugins" : [
     ["syntax-dynamic-import"],
     ["babel-plugin-styled-components", {
-      "displayName": false
+      "displayName": true,
+      "fileName": false,
+      "ssr": true
     }]
   ],
   "env": {
@@ -21,6 +23,12 @@
         "src/service-worker.js",
         "src/setup.js",
         "*.test.js"
+      ],
+      "plugins" : [
+        ["babel-plugin-styled-components", {
+          "displayName": false,
+          "ssr": true
+        }]
       ]
     }
   }
