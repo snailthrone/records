@@ -2,14 +2,14 @@
 
 exports[`<Buttons /> Renders correctly 1`] = `
 <div
-  className="sc-htpNat eUEVxm"
+  className="Wrapper-t8at1t-0 cEVezx"
 >
   <div
-    className="sc-bdVaJa ewtIVp"
+    className="Container-s1cvj67l-0 kUgPaT"
   >
     <input
       aria-label="search"
-      className="sc-bwzfXH gYQVeA"
+      className="Input-s1cvj67l-1 eaTpaa"
       name="search-field"
       onChange={[Function]}
       placeholder="Search"
@@ -18,25 +18,25 @@ exports[`<Buttons /> Renders correctly 1`] = `
     />
   </div>
   <div
-    className="app__button sc-bxivhb czGGTy"
+    className="app__button Button-t8at1t-1 fASBcw"
     onClick={[Function]}
   >
     CD
   </div>
   <div
-    className="app__button sc-bxivhb czGGTy"
+    className="app__button Button-t8at1t-1 fASBcw"
     onClick={[Function]}
   >
     Coming
   </div>
   <div
-    className="app__button sc-bxivhb czGGTy"
+    className="app__button Button-t8at1t-1 fASBcw"
     onClick={[Function]}
   >
     Wishlist
   </div>
   <div
-    className="app__button sc-bxivhb czGGTy"
+    className="app__button Button-t8at1t-1 fASBcw"
     onClick={[Function]}
   >
     Vinyls

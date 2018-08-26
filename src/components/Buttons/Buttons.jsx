@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 `
 
 const Button = styled.div`
-  background-color: #222222;
-  color: #ffffff;
+  background-color: #222;
+  color: #fff;
   display: inline-block;
   font-family: 'Questrial', Verdana, sans-serif;
   font-size: 14px;
@@ -25,8 +25,9 @@ const Button = styled.div`
   padding: 20px 0;
   text-align: center;
   width: ${100 / 4}%;
+
   &:hover {
-    background: #7F7E7E;
+    background: #7f7e7e;
     cursor: pointer;
   }
 `

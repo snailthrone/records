@@ -31,9 +31,13 @@ var _updateData2 = _interopRequireDefault(_updateData);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* eslint no-console: 0 */ // --> OFF
-const Container = _styledComponents2.default.div(['color:#222222;display:block;margin:auto;width:100%;']);
+const Container = _styledComponents2.default.div.withConfig({
+  componentId: 'sc5afz-0'
+})(['color:#222;display:block;margin:auto;width:100%;']);
 
-const Header = _styledComponents2.default.h1(['background-color:#222222;color:#FFFFFF;font-family:\'Questrial\',Verdana,sans-serif;font-size:30px;margin:auto;padding:20px 0;text-align:center;width:100%;']);
+const Header = _styledComponents2.default.h1.withConfig({
+  componentId: 'sc5afz-1'
+})(['background-color:#222;color:#fff;font-family:\'Questrial\',Verdana,sans-serif;font-size:30px;margin:auto;padding:20px 0;text-align:center;width:100%;']);
 class App extends _react.Component {
   constructor(...args) {
     var _temp;

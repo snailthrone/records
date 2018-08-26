@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin: auto;
   max-width: 600px;
   padding: 10px 0;
@@ -11,7 +11,7 @@ const Container = styled.div`
 `
 
 const Input = styled.input`
-  border: 1px solid #7F7E7E;
+  border: 1px solid #7f7e7e;
   margin: auto;
   padding: 10px 0;
   text-indent: 5px;

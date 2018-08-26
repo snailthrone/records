@@ -10,15 +10,15 @@ import Buttons from '../Buttons/Buttons'
 import updateData from '../update-data'
 
 const Container = styled.div`
-  color: #222222;
+  color: #222;
   display: block;
   margin: auto;
   width: 100%;
 `
 
 const Header = styled.h1`
-  background-color: #222222;
-  color: #FFFFFF;
+  background-color: #222;
+  color: #fff;
   font-family: 'Questrial', Verdana, sans-serif;
   font-size: 30px;
   margin: auto;

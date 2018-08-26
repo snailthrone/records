@@ -22,9 +22,13 @@ var _Input2 = _interopRequireDefault(_Input);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Wrapper = _styledComponents2.default.div(['background-color:inherit;bottom:0;left:0;margin:auto;position:fixed;width:100%;z-index:100;']);
+const Wrapper = _styledComponents2.default.div.withConfig({
+  componentId: 't8at1t-0'
+})(['background-color:inherit;bottom:0;left:0;margin:auto;position:fixed;width:100%;z-index:100;']);
 
-const Button = _styledComponents2.default.div(['background-color:#222222;color:#ffffff;display:inline-block;font-family:\'Questrial\',Verdana,sans-serif;font-size:14px;font-weight:bold;margin:auto;padding:20px 0;text-align:center;width:', '%;&:hover{background:#7F7E7E;cursor:pointer;}'], 100 / 4);
+const Button = _styledComponents2.default.div.withConfig({
+  componentId: 't8at1t-1'
+})(['background-color:#222;color:#fff;display:inline-block;font-family:\'Questrial\',Verdana,sans-serif;font-size:14px;font-weight:bold;margin:auto;padding:20px 0;text-align:center;width:', '%;&:hover{background:#7f7e7e;cursor:pointer;}'], 100 / 4);
 
 const Buttons = ({ changeList, searchContent, value }) => _react2.default.createElement(
   Wrapper,

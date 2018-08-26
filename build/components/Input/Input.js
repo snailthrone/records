@@ -18,9 +18,13 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Container = _styledComponents2.default.div(['background-color:#FFFFFF;margin:auto;max-width:600px;padding:10px 0;width:95%;']);
+const Container = _styledComponents2.default.div.withConfig({
+  componentId: 's1cvj67l-0'
+})(['background-color:#fff;margin:auto;max-width:600px;padding:10px 0;width:95%;']);
 
-const Input = _styledComponents2.default.input(['border:1px solid #7F7E7E;margin:auto;padding:10px 0;text-indent:5px;width:100%;']);
+const Input = _styledComponents2.default.input.withConfig({
+  componentId: 's1cvj67l-1'
+})(['border:1px solid #7f7e7e;margin:auto;padding:10px 0;text-indent:5px;width:100%;']);
 
 const SearchInput = ({ onChange, placeholder, value }) => _react2.default.createElement(
   Container,

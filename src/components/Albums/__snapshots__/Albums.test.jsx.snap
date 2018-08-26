@@ -3,20 +3,20 @@
 exports[`Renders corretly 1`] = `
 Array [
   <h3
-    className="sc-bwzfXH bUqtjj"
+    className="Heading-o0b9ch-1 elMfkV"
   >
     Artist – Album (date)
   </h3>,
   <ul
-    className="sc-bdVaJa euFgJ"
+    className="Container-o0b9ch-0 fWUFJo"
   >
     <li
-      className="sc-htpNat flGfQk"
+      className="Album-o0b9ch-2 fdMfKQ"
     >
       Deafheaven – Ordinary Corrupt Human Love (13.7.2018)
     </li>
     <li
-      className="sc-htpNat jHhbwj"
+      className="Album-o0b9ch-2 diIUsR"
     >
       Urfaust – Constellatory Practice
     </li>
@@ -27,12 +27,12 @@ Array [
 exports[`Renders corretly if value doesn't match 1`] = `
 Array [
   <h3
-    className="sc-bwzfXH bUqtjj"
+    className="Heading-o0b9ch-1 elMfkV"
   >
     Artist – Album (date)
   </h3>,
   <ul
-    className="sc-bdVaJa euFgJ"
+    className="Container-o0b9ch-0 fWUFJo"
   />,
 ]
 `;

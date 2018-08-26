@@ -8,6 +8,7 @@ const Container = styled.ul`
   max-width: 600px;
   padding: 0 0 100px 0;
   width: 90%;
+
   @media screen and (min-width: 600px) {
     width: 100%;
   }
@@ -20,6 +21,7 @@ const Heading = styled.h3`
   margin: 0.8em auto;
   max-width: 600px;
   width: 90%;
+
   @media screen and (min-width: 600px) {
     width: 100%;
   }
@@ -29,8 +31,9 @@ const Album = styled.li`
   font-family: 'Questrial', Verdana, sans-serif;
   font-size: 12px;
   line-height: 1.35em;
-  margin: auto auto .4em auto;
+  margin: auto auto 0.4em auto;
   text-decoration: ${({ bought }) => (bought ? 'line-through' : 'none')};
+
   @media screen and (min-width: 600px) {
     font-size: 14px;
   }
