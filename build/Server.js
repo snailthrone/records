@@ -52,7 +52,7 @@ app.use((0, _compression2.default)({ filter: shouldCompress }));
 app.use('/', _express2.default.static(_path2.default.join(__dirname, '/../public')));
 app.set('port', process.env.PORT || 8080);
 
-app.get('/health-check', (request, result) => result.sendStatus(200));
+app.get('/.well-known', (request, result) => result.sendStatus(200));
 
 app.get('/', (request, result) => {
   result.send(`
