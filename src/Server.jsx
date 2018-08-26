@@ -40,6 +40,7 @@ app.get('/', (request, result) => {
           <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
           <meta name="author" content="Eemeli Martti">
           <meta name="description" content="Records">
+          <meta name="theme-color" content="#222222">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="manifest" href="/manifest.json">
           <style type="text/css">
