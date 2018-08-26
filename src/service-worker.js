@@ -5,7 +5,7 @@ const filesToCache = [
   './app.js',
 ]
 
-self.addEventListener('install', (event) => {
+window.self.addEventListener('install', (event) => {
   console.log('Event: Install')
   event.waitUntil(
     caches.open(cacheName)
@@ -19,7 +19,7 @@ self.addEventListener('install', (event) => {
   )
 })
 
-self.addEventListener('activate', (event) => {
+window.self.addEventListener('activate', (event) => {
   console.log('Event: Activate')
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
@@ -27,12 +27,13 @@ self.addEventListener('activate', (event) => {
         if (cache !== cacheName) {
           return caches.delete(cache)
         }
+        return false
       }),
     )),
   )
 })
 
-self.addEventListener('fetch', (event) => {
+window.self.addEventListener('fetch', (event) => {
   console.log('Event: Fetch')
   const { request } = event
   event.respondWith(
