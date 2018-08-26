@@ -5,12 +5,12 @@ const cacheName = 'cache-v1'
 const filesToCache = [
   './',
   './app.js',
-  'img/image_128x128.jpg',
-  'img/image_144x144.jpg',
-  'img/image_152x152.jpg',
-  'img/image_192x192.jpg',
-  'img/image_256x256.jpg',
-  'img/image_512x512.jpg',
+  'img/image_128x128.png',
+  'img/image_144x144.png',
+  'img/image_152x152.png',
+  'img/image_192x192.png',
+  'img/image_256x256.png',
+  'img/image_512x512.png',
 ]
 
 self.addEventListener('install', (event) => {
