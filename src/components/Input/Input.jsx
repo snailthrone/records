@@ -21,6 +21,7 @@ const Input = styled.input`
 const SearchInput = ({ onChange, placeholder, value }) => (
   <Container>
     <Input
+      aria-label="search"
       type="text"
       name="search-field"
       placeholder={placeholder}

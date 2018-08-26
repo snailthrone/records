@@ -26,6 +26,7 @@ const SearchInput = ({ onChange, placeholder, value }) => _react2.default.create
   Container,
   null,
   _react2.default.createElement(Input, {
+    'aria-label': 'search',
     type: 'text',
     name: 'search-field',
     placeholder: placeholder,
