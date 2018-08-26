@@ -1,5 +1,9 @@
 'use strict';
 
+var _compression = require('compression');
+
+var _compression2 = _interopRequireDefault(_compression);
+
 var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
@@ -22,12 +26,20 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* eslint no-console: 0 */ // --> OFF
-const app = new _express2.default();
+const app = new _express2.default(); /* eslint no-console: 0 */ // --> OFF
+
 const sheet = new _styledComponents.ServerStyleSheet();
 const markdown = (0, _server.renderToString)(sheet.collectStyles(_react2.default.createElement(_App2.default, { path: '' })));
 const styles = sheet.getStyleTags();
 
+const shouldCompress = (request, result) => {
+  if (request.headers['x-no-compression']) {
+    return false;
+  }
+  return _compression2.default.filter(request, result);
+};
+
+app.use((0, _compression2.default)({ filter: shouldCompress }));
 app.use('/', _express2.default.static(_path2.default.join(__dirname, '/../public')));
 app.set('port', process.env.PORT || 8080);
 

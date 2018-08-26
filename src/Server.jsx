@@ -1,4 +1,5 @@
 /* eslint no-console: 0 */ // --> OFF
+import compression from 'compression'
 import Express from 'express'
 import path from 'path'
 import React from 'react'
@@ -12,6 +13,14 @@ const sheet = new ServerStyleSheet()
 const markdown = renderToString(sheet.collectStyles(<App path="" />))
 const styles = sheet.getStyleTags()
 
+const shouldCompress = (request, result) => {
+  if (request.headers['x-no-compression']) {
+    return false
+  }
+  return compression.filter(request, result)
+}
+
+app.use(compression({ filter: shouldCompress }))
 app.use('/', Express.static(path.join(__dirname, '/../public')))
 app.set('port', (process.env.PORT || 8080))
 
