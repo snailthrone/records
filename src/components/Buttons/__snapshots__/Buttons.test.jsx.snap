@@ -8,6 +8,7 @@ exports[`<Buttons /> Renders correctly 1`] = `
     className="sc-bdVaJa ewtIVp"
   >
     <input
+      aria-label="search"
       className="sc-bwzfXH gYQVeA"
       name="search-field"
       onChange={[Function]}

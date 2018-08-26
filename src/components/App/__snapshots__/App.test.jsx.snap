@@ -7040,6 +7040,7 @@ exports[`Renders correctly 1`] = `
       className="sc-bxivhb byqmRi"
     >
       <input
+        aria-label="search"
         className="sc-ifAKCX dbyriD"
         name="search-field"
         onChange={[Function]}

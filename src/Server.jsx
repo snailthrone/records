@@ -1,8 +1,7 @@
 /* eslint no-console: 0 */ // --> OFF
 import compression from 'compression'
 import Express from 'express'
-import fs from 'fs'
-import https from 'https'
+import helmet from 'helmet'
 import path from 'path'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
@@ -24,6 +23,7 @@ const shouldCompress = (request, result) => {
 }
 
 app.use(compression({ filter: shouldCompress }))
+app.use(helmet())
 app.use('/', Express.static(path.join(__dirname, '/../public')))
 app.set('port', (process.env.PORT || 8080))
 
