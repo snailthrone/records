@@ -27,6 +27,8 @@ app.use(compression({ filter: shouldCompress }))
 app.use('/', Express.static(path.join(__dirname, '/../public')))
 app.set('port', (process.env.PORT || 8080))
 
+app.get('/health-check', (request, result) => result.sendStatus(200))
+
 app.get('/', (request, result) => {
   result.send(`
     <!DOCTYPE html>
