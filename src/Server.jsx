@@ -27,7 +27,9 @@ app.use(compression({ filter: shouldCompress }))
 app.use('/', Express.static(path.join(__dirname, '/../public')))
 app.set('port', (process.env.PORT || 8080))
 
-app.get('/.well-known', (request, result) => result.sendStatus(200))
+const letsEncryptReponse = process.env.CERTBOT_RESPONSE
+
+app.get('/.well-known/acme-challenge/:content', (request, result) => result.send(letsEncryptReponse))
 
 app.get('/', (request, result) => {
   result.send(`
