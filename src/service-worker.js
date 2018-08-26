@@ -1,11 +1,12 @@
-/* eslint no-console: 0 */ // --> OFF
+/* eslint no-console: 0 */
+/* eslint no-restricted-globals: 1 */
 const cacheName = 'cache-v1'
 
 const filesToCache = [
   './app.js',
 ]
 
-window.self.addEventListener('install', (event) => {
+self.addEventListener('install', (event) => {
   console.log('Event: Install')
   event.waitUntil(
     caches.open(cacheName)
@@ -19,7 +20,7 @@ window.self.addEventListener('install', (event) => {
   )
 })
 
-window.self.addEventListener('activate', (event) => {
+self.addEventListener('activate', (event) => {
   console.log('Event: Activate')
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
@@ -33,7 +34,7 @@ window.self.addEventListener('activate', (event) => {
   )
 })
 
-window.self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', (event) => {
   console.log('Event: Fetch')
   const { request } = event
   event.respondWith(
