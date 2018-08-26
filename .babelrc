@@ -18,6 +18,7 @@
   "env": {
     "production": {
       "ignore":[
+        "src/service-worker.js",
         "src/setup.js",
         "*.test.js"
       ]
