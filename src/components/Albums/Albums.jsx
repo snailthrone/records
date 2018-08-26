@@ -27,7 +27,7 @@ const Album = styled.li`
   margin: auto auto .4em auto;
   text-decoration: ${({ bought }) => (bought ? 'line-through' : 'none')};
   @media screen and (min-width: 600px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `
 
