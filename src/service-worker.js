@@ -3,6 +3,7 @@
 const cacheName = 'cache-v1'
 
 const filesToCache = [
+  './',
   './app.js',
 ]
 

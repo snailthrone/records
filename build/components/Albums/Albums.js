@@ -24,10 +24,6 @@ const Heading = _styledComponents2.default.h3(['font-family:\'Questrial\',Verdan
 
 const Album = _styledComponents2.default.li(['font-family:\'Questrial\',Verdana,sans-serif;font-size:12px;line-height:1.35em;margin:auto auto .4em auto;text-decoration:', ';@media screen and (min-width:600px){font-size:14px;}'], ({ bought }) => bought ? 'line-through' : 'none');
 
-const AlbumArtist = _styledComponents2.default.span(['']);
-const AlbumTitle = _styledComponents2.default.span(['']);
-const AlbumDate = _styledComponents2.default.span(['']);
-
 const Albums = ({ data, value }) => _react2.default.createElement(
   Container,
   null,
@@ -43,28 +39,7 @@ const Albums = ({ data, value }) => _react2.default.createElement(
       return _react2.default.createElement(
         Album,
         { bought: bought, key: `album-'${i + 1}` },
-        _react2.default.createElement(
-          AlbumArtist,
-          { className: 'artist' },
-          ' ',
-          artist
-        ),
-        ' ',
-        '\u2013',
-        _react2.default.createElement(
-          AlbumTitle,
-          { className: 'album' },
-          ' ',
-          album,
-          ' '
-        ),
-        date && date !== 'null' && _react2.default.createElement(
-          AlbumDate,
-          { className: 'date' },
-          '(',
-          date,
-          ')'
-        )
+        date ? `${artist} – ${album} (${date})` : `${artist} – ${album}`
       );
     }
     return false;

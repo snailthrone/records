@@ -31,10 +31,6 @@ const Album = styled.li`
   }
 `
 
-const AlbumArtist = styled.span``
-const AlbumTitle = styled.span``
-const AlbumDate = styled.span``
-
 const Albums = ({ data, value }) => (
   <Container>
     <Heading>
@@ -50,24 +46,13 @@ const Albums = ({ data, value }) => (
         ) {
           return (
             <Album bought={bought} key={`album-'${(i + 1)}`}>
-              <AlbumArtist className="artist">
-                {' '}
-                {artist}
-              </AlbumArtist>
-              {' '}
-              –
-              <AlbumTitle className="album">
-                {' '}
-                {album}
-                {' '}
-              </AlbumTitle>
-              {(date && date !== 'null') && (
-              <AlbumDate className="date">
-                (
-                {date}
+              {
+                date ? (
+                  `${artist} – ${album} (${date})`
+                ) : (
+                  `${artist} – ${album}`
                 )
-              </AlbumDate>
-              )}
+              }
             </Album>
           )
         }
