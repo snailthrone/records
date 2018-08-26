@@ -8,6 +8,14 @@ var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+var _https = require('https');
+
+var _https2 = _interopRequireDefault(_https);
+
 var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
@@ -28,6 +36,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const app = new _express2.default(); /* eslint no-console: 0 */ // --> OFF
 
+
 const sheet = new _styledComponents.ServerStyleSheet();
 const markdown = (0, _server.renderToString)(sheet.collectStyles(_react2.default.createElement(_App2.default, { path: '' })));
 const styles = sheet.getStyleTags();
@@ -43,8 +52,8 @@ app.use((0, _compression2.default)({ filter: shouldCompress }));
 app.use('/', _express2.default.static(_path2.default.join(__dirname, '/../public')));
 app.set('port', process.env.PORT || 8080);
 
-app.get('/', (req, res) => {
-  res.send(`
+app.get('/', (request, result) => {
+  result.send(`
     <!DOCTYPE html>
       <html lang="en">
         <head>

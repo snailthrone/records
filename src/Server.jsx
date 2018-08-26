@@ -1,6 +1,8 @@
 /* eslint no-console: 0 */ // --> OFF
 import compression from 'compression'
 import Express from 'express'
+import fs from 'fs'
+import https from 'https'
 import path from 'path'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
@@ -9,6 +11,7 @@ import { ServerStyleSheet } from 'styled-components'
 import App from './components/App/App'
 
 const app = new Express()
+
 const sheet = new ServerStyleSheet()
 const markdown = renderToString(sheet.collectStyles(<App path="" />))
 const styles = sheet.getStyleTags()
@@ -24,8 +27,8 @@ app.use(compression({ filter: shouldCompress }))
 app.use('/', Express.static(path.join(__dirname, '/../public')))
 app.set('port', (process.env.PORT || 8080))
 
-app.get('/', (req, res) => {
-  res.send(`
+app.get('/', (request, result) => {
+  result.send(`
     <!DOCTYPE html>
       <html lang="en">
         <head>
