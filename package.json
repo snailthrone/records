@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.jsx src/",
     "start": "node build/Server.js",
     "test": "jest --coverage --env=jsdom --notify",
-    "watch:client": "parcel watch --log-level 3 --public-url \"http://localhost:8080/\"  --out-dir public --out-file app.js src/Index.jsx",
+    "watch:client": "parcel watch --log-level 3 --no-cache --out-dir public --out-file app.js --public-url \"http://localhost:8080/\" src/Index.jsx",
     "watch:server": "nodemon --exec babel-node src/Server.jsx",
     "watch:test": "jest --watch"
   },

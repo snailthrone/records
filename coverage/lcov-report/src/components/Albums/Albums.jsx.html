@@ -3,12 +3,12 @@
 <head>
     <title>Code coverage report for src/components/Albums/Albums.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(..\..\..\sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/Albums</a> Albums.jsx
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/Albums</a> Albums.jsx
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>14/14</span>
+        <span class='fraction'>11/11</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>14/14</span>
+        <span class='fraction'>11/11</span>
       </div>
     </div>
     <p class="quiet">
@@ -127,15 +127,7 @@
 <a name='L79'></a><a href='#L79'>79</a>
 <a name='L80'></a><a href='#L80'>80</a>
 <a name='L81'></a><a href='#L81'>81</a>
-<a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a>
-<a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L82'></a><a href='#L82'>82</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,6 +143,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,11 +166,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -197,18 +191,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -225,7 +209,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 &nbsp;
 const Container = styled.ul`
@@ -243,7 +227,12 @@ const Heading = styled.h3`
   font-family: 'Questrial', Verdana, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: auto auto 10px auto;
+  margin: 0.8em auto;
+  max-width: 600px;
+  width: 90%;
+  @media screen and (min-width: 600px) {
+    width: 100%;
+  }
 `
 &nbsp;
 const Album = styled.li`
@@ -253,54 +242,41 @@ const Album = styled.li`
   margin: auto auto .4em auto;
   text-decoration: ${({ bought }) =&gt; (bought ? 'line-through' : 'none')};
   @media screen and (min-width: 600px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `
 &nbsp;
-const AlbumArtist = styled.span``
-const AlbumTitle = styled.span``
-const AlbumDate = styled.span``
-&nbsp;
 const Albums = ({ data, value }) =&gt; (
-  &lt;Container&gt;
+  &lt;Fragment&gt;
     &lt;Heading&gt;
       Artist – Album (date)
     &lt;/Heading&gt;
-    {
-      data.map(({
-        artist, album, bought, date,
-      }, i) =&gt; {
-        if (artist.toLowerCase().match(value.toLowerCase())
-            || album.toLowerCase().match(value.toLowerCase())
-            || date.match(value.toLowerCase())
-        ) {
-          return (
-            &lt;Album bought={bought} key={`album-'${(i + 1)}`}&gt;
-              &lt;AlbumArtist className="artist"&gt;
-                {' '}
-                {artist}
-              &lt;/AlbumArtist&gt;
-              {' '}
-              –
-              &lt;AlbumTitle className="album"&gt;
-                {' '}
-                {album}
-                {' '}
-              &lt;/AlbumTitle&gt;
-              {(date &amp;&amp; date !== 'null') &amp;&amp; (
-              &lt;AlbumDate className="date"&gt;
-                (
-                {date}
-                )
-              &lt;/AlbumDate&gt;
-              )}
-            &lt;/Album&gt;
-          )
-        }
-        return false
-      })
-    }
-  &lt;/Container&gt;
+    &lt;Container&gt;
+      {
+        data.map(({
+          artist, album, bought, date,
+        }, i) =&gt; {
+          if (artist.toLowerCase().match(value.toLowerCase())
+              || album.toLowerCase().match(value.toLowerCase())
+              || (date &amp;&amp; date.match(value.toLowerCase()))
+          ) {
+            return (
+              &lt;Album bought={bought} key={`album-'${(i + 1)}`}&gt;
+                {
+                  date ? (
+                    `${artist} – ${album} (${date})`
+                  ) : (
+                    `${artist} – ${album}`
+                  )
+                }
+              &lt;/Album&gt;
+            )
+          }
+          return false
+        })
+      }
+    &lt;/Container&gt;
+  &lt;/Fragment&gt;
 )
 &nbsp;
 Albums.propTypes = {
@@ -319,10 +295,10 @@ export default Albums
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Aug 25 2018 22:04:18 GMT+0300 (Eastern European Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Aug 26 2018 10:37:39 GMT+0300 (GMT+03:00)
 </div>
 </div>
-<script src="../../../prettify.js"></script>
+<script src="..\..\..\prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -330,7 +306,7 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../sorter.js"></script>
-<script src="../../../block-navigation.js"></script>
+<script src="..\..\..\sorter.js"></script>
+<script src="..\..\..\block-navigation.js"></script>
 </body>
 </html>

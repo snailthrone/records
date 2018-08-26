@@ -11,7 +11,7 @@ const sample = [{
 }, {
   artist: 'Urfaust',
   album: 'Constellatory Practice',
-  date: '25.5.2018',
+  date: null,
   bought: false,
 }]
 

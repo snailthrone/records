@@ -20,30 +20,34 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const Container = _styledComponents2.default.ul(['list-style:none;margin:10px auto auto auto;max-width:600px;padding:0 0 100px 0;width:90%;@media screen and (min-width:600px){width:100%;}']);
 
-const Heading = _styledComponents2.default.h3(['font-family:\'Questrial\',Verdana,sans-serif;font-size:16px;font-weight:700;margin:auto auto 10px auto;']);
+const Heading = _styledComponents2.default.h3(['font-family:\'Questrial\',Verdana,sans-serif;font-size:16px;font-weight:700;margin:0.8em auto;max-width:600px;width:90%;@media screen and (min-width:600px){width:100%;}']);
 
 const Album = _styledComponents2.default.li(['font-family:\'Questrial\',Verdana,sans-serif;font-size:12px;line-height:1.35em;margin:auto auto .4em auto;text-decoration:', ';@media screen and (min-width:600px){font-size:14px;}'], ({ bought }) => bought ? 'line-through' : 'none');
 
 const Albums = ({ data, value }) => _react2.default.createElement(
-  Container,
+  _react.Fragment,
   null,
   _react2.default.createElement(
     Heading,
     null,
     'Artist \u2013 Album (date)'
   ),
-  data.map(({
-    artist, album, bought, date
-  }, i) => {
-    if (artist.toLowerCase().match(value.toLowerCase()) || album.toLowerCase().match(value.toLowerCase()) || date.match(value.toLowerCase())) {
-      return _react2.default.createElement(
-        Album,
-        { bought: bought, key: `album-'${i + 1}` },
-        date ? `${artist} – ${album} (${date})` : `${artist} – ${album}`
-      );
-    }
-    return false;
-  })
+  _react2.default.createElement(
+    Container,
+    null,
+    data.map(({
+      artist, album, bought, date
+    }, i) => {
+      if (artist.toLowerCase().match(value.toLowerCase()) || album.toLowerCase().match(value.toLowerCase()) || date && date.match(value.toLowerCase())) {
+        return _react2.default.createElement(
+          Album,
+          { bought: bought, key: `album-'${i + 1}` },
+          date ? `${artist} – ${album} (${date})` : `${artist} – ${album}`
+        );
+      }
+      return false;
+    })
+  )
 );
 
 Albums.propTypes = {
