@@ -15,7 +15,7 @@ exports[`Renders correctly 1`] = `
     Artist – Album (date)
   </h3>
   <ul
-    className="Container-o0b9ch-0 fWUFJo"
+    className="Container-o0b9ch-0 pyulI"
   >
     <li
       className="Album-o0b9ch-2 diIUsR"

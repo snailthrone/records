@@ -20,7 +20,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const Container = _styledComponents2.default.ul.withConfig({
   componentId: 'o0b9ch-0'
-})(['list-style:none;margin:10px auto auto auto;max-width:600px;padding:0 0 100px 0;width:90%;@media screen and (min-width:600px){width:100%;}']);
+})(['list-style:none;margin:10px auto auto auto;max-width:600px;padding:0 0 120px 0;width:90%;@media screen and (min-width:600px){width:100%;}']);
 
 const Heading = _styledComponents2.default.h3.withConfig({
   componentId: 'o0b9ch-1'
