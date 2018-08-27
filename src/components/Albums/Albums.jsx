@@ -6,7 +6,7 @@ const Container = styled.ul`
   list-style: none;
   margin: 10px auto auto auto;
   max-width: 600px;
-  padding: 0 0 100px 0;
+  padding: 0 0 120px 0;
   width: 90%;
 
   @media screen and (min-width: 600px) {
