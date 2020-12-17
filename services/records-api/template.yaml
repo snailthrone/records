@@ -1,0 +1,14 @@
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  RecordsApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Events:
+        RecordsApi:
+          Type: Api
+          Properties:
+            Path: /api
+            Method: get

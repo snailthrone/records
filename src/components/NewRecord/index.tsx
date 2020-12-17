@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, FormEvent, useState } from 'react';
 
 export type Props = unknown;
 
@@ -8,7 +8,7 @@ const NewRecord: FC<Props> = () => {
   const [year, setYear] = useState('');
   const [catalogId, setCatalogId] = useState('');
 
-  const submit = async event => {
+  const submit = async (event: FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
 
     const newAlbum = { album, artist, year, catalogId };

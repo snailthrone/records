@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Record renders correctly 1`] = `
+<div>
+  <h3>
+    Heavy as a Really Heavy Thing
+  </h3>
+  <h4>
+    Strapping Young Lad
+  </h4>
+  <div>
+    <span>
+      1995
+    </span>
+     
+    <span>
+      77092-2
+    </span>
+  </div>
+</div>
+`;

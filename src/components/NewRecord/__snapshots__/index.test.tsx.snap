@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`New Record renders correctly 1`] = `
+<div>
+  <h3>
+    Add new record
+  </h3>
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <label>
+        Album:
+         
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </label>
+    </div>
+    <div>
+      <label>
+        Artist:
+         
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </label>
+    </div>
+    <div>
+      <label>
+        Year:
+         
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </label>
+    </div>
+    <div>
+      <label>
+        Catalog id:
+         
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </label>
+    </div>
+    <button
+      type="submit"
+    >
+      Add
+    </button>
+  </form>
+</div>
+`;
